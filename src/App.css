@@ -1,0 +1,71 @@
+/* Custom Properties */
+:root {
+  --primary-color: #0d6efd;
+  --dark-color: #212529;
+  --light-bg: #f8f9fa;
+  --transition: all 0.3s ease;
+}
+
+/* Base Styles */
+.App {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Enhancements */
+.card {
+  transition: var(--transition);
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Section Spacing */
+section {
+  padding: 40px 0;
+}
+
+/* Badge Styling */
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Shadow on Scroll (handled by Bootstrap shadow class, but we can refine) */
+.navbar.shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Animations (using animate.css classes in HTML, but adding base here if needed) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+}

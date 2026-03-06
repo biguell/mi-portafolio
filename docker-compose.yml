@@ -1,0 +1,7 @@
+services:
+  portfolio:
+    build: .
+    container_name: mi-portafolio
+    restart: always
+    ports:
+      - "7777:80"
