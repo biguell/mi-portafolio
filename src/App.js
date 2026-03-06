@@ -74,31 +74,92 @@ function App() {
       <Header />
       
       <main>
-        {/* Section: About Me */}
-        <section id="about" className="py-5 bg-light">
+        {/* Section: Skills & Technical Levels */}
+        <section id="about" className="py-5">
           <div className="container px-4">
-            <div className="row justify-content-center">
-              <div className="col-lg-8 text-center">
+            <div className="row g-5">
+              <div className="col-lg-5 reveal">
                 <h2 className="fw-bold mb-4">Sobre Mí</h2>
-                <p className="lead text-muted">
+                <p className="lead text-dark">
                   Soy José Luis Izquierdo Echuaca, técnico y desarrollador autodidacta con pasión por la tecnología. 
                   Administro mi propia infraestructura de servidores formada por dos Raspberry Pi: 
-                  <strong>Raspi</strong> (servidor de aplicaciones con Docker, Plex y Home Assistant) y 
-                  <strong>Rambo</strong> (NAS con copias de seguridad Borg y almacenamiento compartido). 
-                  Ambos servidores están protegidos y conectados bajo una VPN WireGuard, 
-                  permitiéndome acceder a todos mis servicios de forma segura desde cualquier lugar.
+                  <strong>Raspi</strong> y <strong>Rambo</strong>. 
+                </p>
+                <p className="text-muted">
+                  Gestiono servicios críticos bajo contenedores Docker y mantengo una red privada segura mediante WireGuard. 
+                  Mi experiencia abarca desde el desarrollo de software en Python hasta la fabricación digital y automatización física.
                 </p>
                 <div className="mt-4">
-                  <span className="badge bg-primary m-1 p-2">Python</span>
-                  <span className="badge bg-secondary m-1 p-2">Docker</span>
-                  <span className="badge bg-success m-1 p-2">Linux</span>
-                  <span className="badge bg-info m-1 p-2">React</span>
-                  <span className="badge bg-warning text-dark m-1 p-2">Arduino</span>
-                  <span className="badge bg-danger m-1 p-2">Raspberry Pi</span>
-                  <span className="badge bg-dark m-1 p-2">WireGuard</span>
-                  <span className="badge bg-primary m-1 p-2">Bash</span>
-                  <span className="badge bg-dark m-1 p-2">Impresión 3D</span>
-                  <span className="badge bg-secondary m-1 p-2">Diseño 3D</span>
+                  <a href="#contact" className="btn btn-outline-primary px-4 fw-bold">Contactar</a>
+                </div>
+              </div>
+              
+              <div className="col-lg-7">
+                <h2 className="fw-bold mb-4 text-center text-lg-start">Capacidades Técnicas</h2>
+                <div className="row">
+                  <div className="col-md-6 reveal">
+                    <h5 className="fw-bold mb-3 mt-2"><i className="bi bi-cpu me-2"></i>Hardware & DevOps</h5>
+                    <div className="skill-item">
+                      <div className="d-flex justify-content-between">
+                        <span>Raspberry Pi / Linux</span>
+                        <span className="fw-bold text-primary">Experto</span>
+                      </div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '95%' }}></div></div>
+                    </div>
+                    <div className="skill-item">
+                      <div className="d-flex justify-content-between">
+                        <span>Docker / Portainer</span>
+                        <span className="fw-bold text-primary">Avanzado</span>
+                      </div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%' }}></div></div>
+                    </div>
+                    <div className="skill-item">
+                      <div className="d-flex justify-content-between">
+                        <span>Impresión & Diseño 3D</span>
+                        <span className="fw-bold text-primary">Experto</span>
+                      </div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '90%' }}></div></div>
+                    </div>
+                    <div className="skill-item">
+                      <div className="d-flex justify-content-between">
+                        <span>WireGuard / Redes</span>
+                        <span className="fw-bold text-primary">Intermedio</span>
+                      </div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '70%' }}></div></div>
+                    </div>
+                  </div>
+                  
+                  <div className="col-md-6 reveal">
+                    <h5 className="fw-bold mb-3 mt-2"><i className="bi bi-code-slash me-2"></i>Software & Desarrollo</h5>
+                    <div className="skill-item">
+                      <div className="d-flex justify-content-between">
+                        <span>Python (Flask / Scripts)</span>
+                        <span className="fw-bold text-primary">Avanzado</span>
+                      </div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%' }}></div></div>
+                    </div>
+                    <div className="skill-item">
+                      <div className="d-flex justify-content-between">
+                        <span>Git / GitHub</span>
+                        <span className="fw-bold text-primary">Intermedio</span>
+                      </div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '75%' }}></div></div>
+                    </div>
+                    <div className="skill-item">
+                      <div className="d-flex justify-content-between">
+                        <span>React / JS / CSS</span>
+                        <span className="fw-bold text-primary">Intermedio</span>
+                      </div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '65%' }}></div></div>
+                    </div>
+                    <div className="skill-item">
+                      <div className="d-flex justify-content-between">
+                        <span>Arduino / Electrónica</span>
+                        <span className="fw-bold text-primary">Intermedio</span>
+                      </div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '70%' }}></div></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
