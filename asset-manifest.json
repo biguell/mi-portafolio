@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mi-portafolio/static/css/main.4b8acc4c.css",
-    "main.js": "/mi-portafolio/static/js/main.ed0c3420.js",
+    "main.css": "/mi-portafolio/static/css/main.0bd7f639.css",
+    "main.js": "/mi-portafolio/static/js/main.1750e911.js",
     "static/js/453.c173b4f9.chunk.js": "/mi-portafolio/static/js/453.c173b4f9.chunk.js",
     "static/media/plex.png": "/mi-portafolio/static/media/plex.1d83884fbbcf6cde1ffe.png",
     "static/media/turno_control_icon.png": "/mi-portafolio/static/media/turno_control_icon.7c374ee1b49e8914d1db.png",
@@ -14,12 +14,12 @@
     "static/media/rambo_dashboard.png": "/mi-portafolio/static/media/rambo_dashboard.270eef88f69c718a012f.png",
     "static/media/esp32.png": "/mi-portafolio/static/media/esp32.a416cf9acda7020bd717.png",
     "index.html": "/mi-portafolio/index.html",
-    "main.4b8acc4c.css.map": "/mi-portafolio/static/css/main.4b8acc4c.css.map",
-    "main.ed0c3420.js.map": "/mi-portafolio/static/js/main.ed0c3420.js.map",
+    "main.0bd7f639.css.map": "/mi-portafolio/static/css/main.0bd7f639.css.map",
+    "main.1750e911.js.map": "/mi-portafolio/static/js/main.1750e911.js.map",
     "453.c173b4f9.chunk.js.map": "/mi-portafolio/static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b8acc4c.css",
-    "static/js/main.ed0c3420.js"
+    "static/css/main.0bd7f639.css",
+    "static/js/main.1750e911.js"
   ]
 }
