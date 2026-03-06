@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/mi-portafolio/static/css/main.0bd7f639.css",
-    "main.js": "/mi-portafolio/static/js/main.1750e911.js",
-    "static/js/453.c173b4f9.chunk.js": "/mi-portafolio/static/js/453.c173b4f9.chunk.js",
-    "static/media/plex.png": "/mi-portafolio/static/media/plex.1d83884fbbcf6cde1ffe.png",
-    "static/media/turno_control_icon.png": "/mi-portafolio/static/media/turno_control_icon.7c374ee1b49e8914d1db.png",
-    "static/media/nextcloud_logo.png": "/mi-portafolio/static/media/nextcloud_logo.de028828bdd83fbb5a64.png",
-    "static/media/specra_trace.png": "/mi-portafolio/static/media/specra_trace.ceea93685ae46a6cfd13.png",
-    "static/media/nextcloud_hub.png": "/mi-portafolio/static/media/nextcloud_hub.bd9191526d53ed82766f.png",
-    "static/media/home_assistant.png": "/mi-portafolio/static/media/home_assistant.3f7d7cf0362d09213e04.png",
-    "static/media/raspi_dashboard.png": "/mi-portafolio/static/media/raspi_dashboard.a78a1bff0ac9fc15ae46.png",
-    "static/media/nextcloud.png": "/mi-portafolio/static/media/nextcloud.dec541c964805f34483b.png",
-    "static/media/rambo_dashboard.png": "/mi-portafolio/static/media/rambo_dashboard.270eef88f69c718a012f.png",
-    "static/media/esp32.png": "/mi-portafolio/static/media/esp32.a416cf9acda7020bd717.png",
-    "index.html": "/mi-portafolio/index.html",
-    "main.0bd7f639.css.map": "/mi-portafolio/static/css/main.0bd7f639.css.map",
-    "main.1750e911.js.map": "/mi-portafolio/static/js/main.1750e911.js.map",
-    "453.c173b4f9.chunk.js.map": "/mi-portafolio/static/js/453.c173b4f9.chunk.js.map"
+    "main.css": "./static/css/main.0bd7f639.css",
+    "main.js": "./static/js/main.ff9e5bf1.js",
+    "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
+    "static/media/plex.png": "./static/media/plex.1d83884fbbcf6cde1ffe.png",
+    "static/media/turno_control_icon.png": "./static/media/turno_control_icon.7c374ee1b49e8914d1db.png",
+    "static/media/nextcloud_logo.png": "./static/media/nextcloud_logo.de028828bdd83fbb5a64.png",
+    "static/media/specra_trace.png": "./static/media/specra_trace.ceea93685ae46a6cfd13.png",
+    "static/media/nextcloud_hub.png": "./static/media/nextcloud_hub.bd9191526d53ed82766f.png",
+    "static/media/home_assistant.png": "./static/media/home_assistant.3f7d7cf0362d09213e04.png",
+    "static/media/raspi_dashboard.png": "./static/media/raspi_dashboard.a78a1bff0ac9fc15ae46.png",
+    "static/media/nextcloud.png": "./static/media/nextcloud.dec541c964805f34483b.png",
+    "static/media/rambo_dashboard.png": "./static/media/rambo_dashboard.270eef88f69c718a012f.png",
+    "static/media/esp32.png": "./static/media/esp32.a416cf9acda7020bd717.png",
+    "index.html": "./index.html",
+    "main.0bd7f639.css.map": "./static/css/main.0bd7f639.css.map",
+    "main.ff9e5bf1.js.map": "./static/js/main.ff9e5bf1.js.map",
+    "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0bd7f639.css",
-    "static/js/main.1750e911.js"
+    "static/js/main.ff9e5bf1.js"
   ]
 }
