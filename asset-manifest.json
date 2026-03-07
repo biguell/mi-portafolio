@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.0bd7f639.css",
-    "main.js": "./static/js/main.ff9e5bf1.js",
+    "main.css": "./static/css/main.4075628f.css",
+    "main.js": "./static/js/main.60aa1d3a.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
     "static/media/plex.png": "./static/media/plex.1d83884fbbcf6cde1ffe.png",
     "static/media/turno_control_icon.png": "./static/media/turno_control_icon.7c374ee1b49e8914d1db.png",
@@ -14,12 +14,12 @@
     "static/media/rambo_dashboard.png": "./static/media/rambo_dashboard.270eef88f69c718a012f.png",
     "static/media/esp32.png": "./static/media/esp32.a416cf9acda7020bd717.png",
     "index.html": "./index.html",
-    "main.0bd7f639.css.map": "./static/css/main.0bd7f639.css.map",
-    "main.ff9e5bf1.js.map": "./static/js/main.ff9e5bf1.js.map",
+    "main.4075628f.css.map": "./static/css/main.4075628f.css.map",
+    "main.60aa1d3a.js.map": "./static/js/main.60aa1d3a.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bd7f639.css",
-    "static/js/main.ff9e5bf1.js"
+    "static/css/main.4075628f.css",
+    "static/js/main.60aa1d3a.js"
   ]
 }
