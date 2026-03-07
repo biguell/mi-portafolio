@@ -46,7 +46,8 @@ function App() {
       title: 'Proyectos IoT & Impresión 3D',
       description: 'Automatización con Arduino y Raspberry Pi, incluyendo lectores RFID y monitorización. Especialista en fabricación digital con tres impresoras 3D: Ender 3S1 Plus, Ender 3S1 Pro y Ender HI con sistema de filamento CFS.',
       link: '#',
-      image: esp32Img
+      image: esp32Img,
+      overlayText: 'ESP32'
     },
     {
       title: 'Dashboard de Sistema (Rambo)',
@@ -165,7 +166,7 @@ function App() {
             </div>
           </div>
         </section>
-
+ 
         {/* Section: Projects */}
         <section id="projects" className="py-5">
           <div className="container px-4">
@@ -179,6 +180,7 @@ function App() {
                   description={project.description}
                   link={project.link}
                   image={project.image}
+                  overlayText={project.overlayText}
                 />
               ))}
             </div>
