@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.4075628f.css",
-    "main.js": "./static/js/main.d42f1992.js",
+    "main.js": "./static/js/main.25ea6b65.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
     "static/media/plex.png": "./static/media/plex.1d83884fbbcf6cde1ffe.png",
     "static/media/turno_control_icon.png": "./static/media/turno_control_icon.7c374ee1b49e8914d1db.png",
@@ -15,11 +15,11 @@
     "static/media/esp32.png": "./static/media/esp32.a416cf9acda7020bd717.png",
     "index.html": "./index.html",
     "main.4075628f.css.map": "./static/css/main.4075628f.css.map",
-    "main.d42f1992.js.map": "./static/js/main.d42f1992.js.map",
+    "main.25ea6b65.js.map": "./static/js/main.25ea6b65.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4075628f.css",
-    "static/js/main.d42f1992.js"
+    "static/js/main.25ea6b65.js"
   ]
 }
