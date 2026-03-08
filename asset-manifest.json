@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "./static/css/main.4075628f.css",
-    "main.js": "./static/js/main.cba3a46c.js",
+    "main.js": "./static/js/main.7187eb83.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
     "static/media/plex.png": "./static/media/plex.1d83884fbbcf6cde1ffe.png",
     "static/media/turno_control_icon.png": "./static/media/turno_control_icon.7c374ee1b49e8914d1db.png",
     "static/media/nextcloud_logo.png": "./static/media/nextcloud_logo.de028828bdd83fbb5a64.png",
-    "static/media/turnospro_icon.png": "./static/media/turnospro_icon.f8cb7f42d11940c9ac46.png",
+    "static/media/bus_escoba_icon.png": "./static/media/bus_escoba_icon.28a485e3209ba865aa20.png",
     "static/media/specra_trace.png": "./static/media/specra_trace.ceea93685ae46a6cfd13.png",
     "static/media/nextcloud_hub.png": "./static/media/nextcloud_hub.bd9191526d53ed82766f.png",
     "static/media/home_assistant.png": "./static/media/home_assistant.3f7d7cf0362d09213e04.png",
@@ -16,11 +16,11 @@
     "static/media/esp32.png": "./static/media/esp32.a416cf9acda7020bd717.png",
     "index.html": "./index.html",
     "main.4075628f.css.map": "./static/css/main.4075628f.css.map",
-    "main.cba3a46c.js.map": "./static/js/main.cba3a46c.js.map",
+    "main.7187eb83.js.map": "./static/js/main.7187eb83.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4075628f.css",
-    "static/js/main.cba3a46c.js"
+    "static/js/main.7187eb83.js"
   ]
 }
