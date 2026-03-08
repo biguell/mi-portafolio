@@ -63,7 +63,7 @@ function App() {
     },
     {
       title: 'Gestión de Turnos (TurnoControlPro)',
-      description: 'Sistema completo de control de turnos y movimientos de conductores. Es el único proyecto accesible públicamente en internet, desplegado en https://www.turnocontrolpro.com',
+      description: 'Sistema completo de control de turnos y movimientos de conductores. Es accesible públicamente en internet, desplegado en https://www.turnocontrolpro.com',
       link: 'https://www.turnocontrolpro.com',
       image: turnoIcon
     }
@@ -171,7 +171,10 @@ function App() {
         <section id="projects" className="py-5">
           <div className="container px-4">
             <h2 className="fw-bold text-center mb-3">Mis Proyectos</h2>
-            <p className="text-center text-muted mb-5">Todos mis proyectos corren en mis servidores privados (Raspi y Rambo) y son accesibles a través de mi VPN WireGuard. Solo TurnoControlPro está disponible públicamente en internet.</p>
+            <p className="text-center text-muted mb-5">
+              Todos mis proyectos corren en mis servidores privados (Raspi y Rambo) y son accesibles a través de mi VPN WireGuard. 
+              Tanto <strong>TurnoControlPro</strong> como este <strong>Portafolio</strong> (<a href="https://yoeph.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">yoeph.pythonanywhere.com</a>) están disponibles públicamente en internet.
+            </p>
             <div className="row g-4">
               {projects.map((project, index) => (
                 <ProjectCard
