@@ -66,6 +66,12 @@ function App() {
       description: 'Sistema completo de control de turnos y movimientos de conductores. Es accesible públicamente en internet, desplegado en https://www.turnocontrolpro.com',
       link: 'https://www.turnocontrolpro.com',
       image: turnoIcon
+    },
+    {
+      title: 'TurnosPro (Escoba Drivers)',
+      description: 'Aplicación web para la gestión de turnos y equipos de trabajo. Incluye creación de organizaciones, solicitud de días libres, cambios de horario y registro de auditoría. Desplegado en la nube pública.',
+      link: 'https://yoeph.pythonanywhere.com/',
+      image: turnoIcon
     }
   ];
 
@@ -173,7 +179,7 @@ function App() {
             <h2 className="fw-bold text-center mb-3">Mis Proyectos</h2>
             <p className="text-center text-muted mb-5">
               Todos mis proyectos corren en mis servidores privados (Raspi y Rambo) y son accesibles a través de mi VPN WireGuard. 
-              Tanto <strong>TurnoControlPro</strong> como este <strong>Portafolio</strong> (<a href="https://yoeph.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">yoeph.pythonanywhere.com</a>) están disponibles públicamente en internet.
+              TurnoControlPro y TurnosPro son los proyectos disponibles públicamente en internet.
             </p>
             <div className="row g-4">
               {projects.map((project, index) => (
