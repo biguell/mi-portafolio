@@ -15,6 +15,7 @@ import turnoIcon from './assets/containers/turno_control_icon.png';
 import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 import nextcloudHubImg from './assets/containers/nextcloud_hub.png';
 import esp32Img from './assets/containers/esp32.png';
+import turnosProIcon from './assets/containers/turnospro_icon.png';
 
 function App() {
   const projects = [
@@ -62,15 +63,15 @@ function App() {
       image: raspiDashImg
     },
     {
-      title: 'Gestión de Turnos (TurnoControlPro)',
-      description: 'Sistema completo de control de turnos y movimientos de conductores. Es accesible públicamente en internet, desplegado en https://www.turnocontrolpro.com',
-      link: 'https://www.turnocontrolpro.com',
-      image: turnoIcon
-    },
-    {
       title: 'TurnosPro (Escoba Drivers)',
       description: 'Aplicación web para la gestión de turnos y equipos de trabajo. Incluye creación de organizaciones, solicitud de días libres, cambios de horario y registro de auditoría. Desplegado en la nube pública.',
       link: 'https://yoeph.pythonanywhere.com/',
+      image: turnosProIcon
+    },
+    {
+      title: 'Gestión de Turnos (TurnoControlPro)',
+      description: 'Sistema completo de control de turnos y movimientos de conductores. Es accesible públicamente en internet, desplegado en https://www.turnocontrolpro.com',
+      link: 'https://www.turnocontrolpro.com',
       image: turnoIcon
     }
   ];
