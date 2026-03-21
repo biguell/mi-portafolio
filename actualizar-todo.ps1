@@ -22,13 +22,13 @@ npm run deploy
 Write-Host "[4/5] Generando archivo portafolio_jose_luis.html en el escritorio..." -ForegroundColor Yellow
 python bundle_portfolio.py
 
-# 5. Desplegar en Raspi
-Write-Host "[5/5] Actualizando servidor Raspi (192.168.2.16:7777)..." -ForegroundColor Yellow
-# Comprimimos para el despliegue en Raspi
+# 5. Desplegar en Rambo
+Write-Host "[5/5] Actualizando servidor Rambo (192.168.2.35:7777)..." -ForegroundColor Yellow
+# Comprimimos para el despliegue en Rambo
 powershell -Command "Compress-Archive -Path 'Dockerfile', 'docker-compose.yml', 'package.json', 'package-lock.json', 'public', 'src' -DestinationPath 'mi-portafolio.zip' -Force"
 powershell -File ".\desplegar-portafolio.ps1"
 
 Write-Host "`n¡TODO ACTUALIZADO CORRECTAMENTE!" -ForegroundColor Green
 Write-Host "Web Pública: https://biguell.github.io/mi-portafolio/" -ForegroundColor Blue
-Write-Host "Web Raspi:   http://192.168.2.16:7777" -ForegroundColor Blue
+Write-Host "Web Rambo:   http://192.168.2.35:7777" -ForegroundColor Blue
 Write-Host "WhatsApp:    Archivo actualizado en el Escritorio" -ForegroundColor Blue

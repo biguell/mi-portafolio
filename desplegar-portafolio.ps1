@@ -1,10 +1,10 @@
-# Script de despliegue para el Portafolio en Raspi (192.168.2.16)
+# Script de despliegue para el Portafolio en Rambo (192.168.2.35)
 # Este script sube el código, lo descomprime y lanza el contenedor en el puerto 6666
 
-$RASPI_IP = "192.168.2.16"
-$RASPI_USER = "yoeph"
+$RASPI_IP = "192.168.2.35"
+$RASPI_USER = "yambo"
 $SSH_PORT = "22"
-$REMOTE_PATH = "/home/yoeph/mi-portafolio"
+$REMOTE_PATH = "/home/yambo/mi-portafolio"
 
 Write-Host "--- Iniciando Despliegue del Portafolio en Raspi (SSH Port: $SSH_PORT) ---" -ForegroundColor Cyan
 
