@@ -65,8 +65,8 @@ function App() {
     },
     {
       title: 'TurnosPro (Escoba Drivers)',
-      description: 'Aplicación web para la gestión de turnos y equipos de trabajo. Incluye creación de organizaciones, solicitud de días libres, cambios de horario y registro de auditoría. Desplegado en la nube pública.',
-      link: 'https://yoeph.pythonanywhere.com/',
+      description: 'Aplicación web para la gestión de turnos y equipos de trabajo. Incluye creación de organizaciones, solicitud de días libres, cambios de horario y registro de auditoría. Alojado localmente y accesible mediante VPN WireGuard.',
+      link: '#',
       image: turnosProIcon
     },
     {
