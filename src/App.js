@@ -16,7 +16,7 @@ import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 import nextcloudHubImg from './assets/containers/nextcloud_hub.png';
 import esp32Img from './assets/containers/esp32.png';
 import turnosProIcon from './assets/containers/staria_escoba_icon.png';
-import gastiumIaImg from './assets/containers/gastium_ia_v1250.png'; // Evitar caché
+import gastiumIaImg from './assets/containers/gastium_ia_v1250_mockup.png'; // Mockup AI original
 
 function App() {
   const projects = [
@@ -79,8 +79,7 @@ function App() {
       title: 'Gastium IA (v12.50)',
       description: 'Asistente de Inteligencia Artificial (Gemini) integrado en el control de gastos. Automatiza la lectura de tickets (OCR), clasifica consumos y optimiza presupuestos.',
       link: 'https://Yoeph.pythonanywhere.com',
-      image: gastiumIaImg,
-      objectFit: 'contain'
+      image: gastiumIaImg
     }
   ];
 
