@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.4075628f.css",
-    "main.js": "./static/js/main.87324938.js",
+    "main.js": "./static/js/main.70b20d06.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
     "static/media/plex.png": "./static/media/plex.1d83884fbbcf6cde1ffe.png",
     "static/media/staria_escoba_icon.png": "./static/media/staria_escoba_icon.c25badd0433b751b6aac.png",
@@ -17,11 +17,11 @@
     "static/media/gastium_ia.png": "./static/media/gastium_ia.6c16091c4bc24c040c54.png",
     "index.html": "./index.html",
     "main.4075628f.css.map": "./static/css/main.4075628f.css.map",
-    "main.87324938.js.map": "./static/js/main.87324938.js.map",
+    "main.70b20d06.js.map": "./static/js/main.70b20d06.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4075628f.css",
-    "static/js/main.87324938.js"
+    "static/js/main.70b20d06.js"
   ]
 }
