@@ -16,7 +16,7 @@ import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 import nextcloudHubImg from './assets/containers/nextcloud_hub.png';
 import esp32Img from './assets/containers/esp32.png';
 import turnosProIcon from './assets/containers/staria_escoba_icon.png';
-import gastiumIaImg from './assets/containers/gastium_ia.png'; // Asegúrate de colocar la imagen aquí
+import gastiumIaImg from './assets/containers/gastium_ia_v1250.png'; // Evitar caché
 
 function App() {
   const projects = [
