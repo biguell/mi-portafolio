@@ -16,6 +16,7 @@ import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 import nextcloudHubImg from './assets/containers/nextcloud_hub.png';
 import esp32Img from './assets/containers/esp32.png';
 import turnosProIcon from './assets/containers/staria_escoba_icon.png';
+import gastiumIaImg from './assets/containers/gastium_ia.png'; // Asegúrate de colocar la imagen aquí
 
 function App() {
   const projects = [
@@ -73,6 +74,13 @@ function App() {
       description: 'Sistema completo de control de turnos y movimientos de conductores. Es accesible públicamente en internet, desplegado en https://www.turnocontrolpro.com',
       link: 'https://www.turnocontrolpro.com',
       image: turnoIcon
+    },
+    {
+      title: 'Gastium IA (v12.50)',
+      description: 'Asistente de Inteligencia Artificial (Gemini) integrado en el control de gastos. Automatiza la lectura de tickets (OCR), clasifica consumos y optimiza presupuestos.',
+      link: 'https://Yoeph.pythonanywhere.com',
+      image: gastiumIaImg,
+      objectFit: 'contain'
     }
   ];
 
@@ -180,7 +188,7 @@ function App() {
             <h2 className="fw-bold text-center mb-3">Mis Proyectos</h2>
             <p className="text-center text-muted mb-5">
               Todos mis proyectos corren en mis servidores privados (Raspi y Rambo) y son accesibles a través de mi VPN WireGuard. 
-              TurnoControlPro y TurnosPro son los proyectos disponibles públicamente en internet.
+              TurnoControlPro y TurnosPro están alojados localmente y no son accesibles desde el exterior.
             </p>
             <div className="row g-4">
               {projects.map((project, index) => (
@@ -191,6 +199,7 @@ function App() {
                   link={project.link}
                   image={project.image}
                   overlayText={project.overlayText}
+                  objectFit={project.objectFit}
                 />
               ))}
             </div>
