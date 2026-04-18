@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "./static/css/main.4075628f.css",
-    "main.js": "./static/js/main.9f0f74d2.js",
+    "main.js": "./static/js/main.e39c30d2.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
+    "static/media/tinkercad.png": "./static/media/tinkercad.85654c2f4ca8b730b92c.png",
     "static/media/plex.png": "./static/media/plex.1d83884fbbcf6cde1ffe.png",
     "static/media/staria_escoba_icon.png": "./static/media/staria_escoba_icon.c25badd0433b751b6aac.png",
+    "static/media/nextcloud_logo.png": "./static/media/nextcloud_logo.de028828bdd83fbb5a64.png",
+    "static/media/turnospro_icon.png": "./static/media/turnospro_icon.f8cb7f42d11940c9ac46.png",
     "static/media/specra_trace.png": "./static/media/specra_trace.ceea93685ae46a6cfd13.png",
     "static/media/home_assistant.png": "./static/media/home_assistant.3f7d7cf0362d09213e04.png",
     "static/media/raspi_dashboard.png": "./static/media/raspi_dashboard.a78a1bff0ac9fc15ae46.png",
@@ -13,11 +16,11 @@
     "static/media/gastium_ia_v1250_mockup.png": "./static/media/gastium_ia_v1250_mockup.0eb8f396950a0f046c4b.png",
     "index.html": "./index.html",
     "main.4075628f.css.map": "./static/css/main.4075628f.css.map",
-    "main.9f0f74d2.js.map": "./static/js/main.9f0f74d2.js.map",
+    "main.e39c30d2.js.map": "./static/js/main.e39c30d2.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4075628f.css",
-    "static/js/main.9f0f74d2.js"
+    "static/js/main.e39c30d2.js"
   ]
 }
