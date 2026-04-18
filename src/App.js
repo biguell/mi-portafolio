@@ -11,71 +11,86 @@ import ramboDashImg from './assets/containers/rambo_dashboard.png';
 import raspiDashImg from './assets/containers/raspi_dashboard.png';
 import specraImg from './assets/containers/specra_trace.png';
 import esp32Img from './assets/containers/esp32.png';
-import turnosProIcon from './assets/containers/staria_escoba_icon.png';
-import gastiumIaImg from './assets/containers/gastium_ia_v1250_mockup.png'; // Mockup AI original
+import stariaEscobaImg from './assets/containers/staria_escoba_icon.png';
+import gastiumIaImg from './assets/containers/gastium_ia_v1250_mockup.png';
+import tinkercadImg from './assets/containers/tinkercad.png';
+import turnosProImg from './assets/containers/turnospro_icon.png';
+import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 
 function App() {
   const projects = [
     {
       title: 'Infraestructura Segura (Rambo NAS)',
-      description: 'NAS principal basado en OMV 7 con "Hardening" avanzado (Lynis 80+). Implementa seguridad multicapa con Fail2ban nativo, AIDE (integridad), rkhunter y ClamAV. Sistema de copias de seguridad BorgBackup cifrado y automatizado.',
+      description: 'Servidor central (192.168.2.35) con OMV 7. "Hardening" avanzado (Lynis 80+), seguridad multicapa con Fail2ban, AIDE y BorgBackup cifrado.',
       link: '#',
       image: ramboDashImg
     },
     {
       title: 'Servidor de Aplicaciones (Raspi)',
-      description: 'Gestión de infraestructura distribuida mediante Docker y Portainer. "Cerebro-Stack" unificado que integra Plex, Home Assistant y Mosquitto, optimizado con transcodificación por hardware y persistencia vía NFS desde Rambo.',
+      description: 'Gestión de infraestructura distribuida (192.168.2.16). "Cerebro-Stack" unificado con Docker, Portainer y transcodificación por hardware.',
       link: '#',
       image: raspiDashImg
     },
     {
-      title: 'App de Defensa Unificada',
-      description: 'Dashboard integral desarrollado en Flask que centraliza alertas de seguridad de red (Suricata) y monitorización de integridad de archivos (PowerShell FIM) en tiempo real para entornos críticos de Windows.',
-      link: '#',
-      image: ramboDashImg // Usando Rambo como placeholder si no hay imagen específica
+      title: 'Escoba Drivers (v16.0)',
+      description: 'Versión definitiva de gestión de turnos con algoritmo de "Justicia Histórica", persistencia total y optimización extrema para iPhone/iOS.',
+      link: 'https://Yoeph.pythonanywhere.com',
+      image: stariaEscobaImg
     },
     {
       title: 'Alexa + Gemini: Mi Asistente IA',
-      description: 'Integración avanzada de una Alexa Skill con el modelo Gemini de Google (IA). Desarrollado con AWS Lambda en Python, permitiendo consultas complejas de IA generativa desde dispositivos Echo.',
+      description: 'Skill personalizada de Alexa conectada a la API de Gemini mediante AWS Lambda (Python), permitiendo razonamiento avanzado por voz.',
       link: '#',
       image: gastiumIaImg
     },
     {
-      title: 'Escoba Drivers (v15.9.8)',
-      description: 'PWA avanzada para gestión de turnos. Incluye el algoritmo de "Justicia Histórica" para asignaciones equitativas, persistencia de datos 100% garantizada, optimización específica para iOS/iPhone y control de movimientos.',
+      title: 'Gastium IA: Control Financiero',
+      description: 'Asistente inteligente de control de gastos integrado con Gemini. Lectura de tickets mediante OCR, clasificación dinámica y optimización de presupuestos.',
       link: 'https://Yoeph.pythonanywhere.com',
-      image: turnosProIcon
+      image: gastiumIaImg
     },
     {
-      title: 'Domótica Avanzada (Home Assistant)',
-      description: 'Centralización de inteligencia hogareña en Raspi. Gestión de red Zigbee propia, integración de dispositivos Tuya/Philips Hue y sensores locales, con acceso seguro mediante VPN WireGuard.',
+      title: 'Movimientos Drivers Comercial',
+      description: 'Plataforma especializada para la gestión comercial y logística de flotas de conductores. Integración con WhatsApp y reportes automáticos.',
+      link: '#',
+      image: turnosProImg
+    },
+    {
+      title: 'Domótica: Home Assistant',
+      description: 'Cerebro inteligente del hogar en Raspi. Red Zigbee, Bluetooth integrado, y control unificado de dispositivos Philips Hue y Tuya.',
       link: '#',
       image: homeAssistantImg
     },
     {
       title: 'K2-RFID IoT System',
-      description: 'Desarrollo de hardware y software basado en ESP32 y el kit RFID RC522. Gestión de lectura/escritura de etiquetas MIFARE Classic 1k con integración en red para control de accesos.',
+      description: 'Desarrollo IoT con ESP32 y RC522. Gestión de lectura/escritura de tarjetas MIFARE para sistemas de control de acceso seguros.',
       link: '#',
       image: esp32Img,
       overlayText: 'ESP32/RFID'
     },
     {
-      title: 'Centro Multimedia Optimizado',
-      description: 'Servidor Plex en contenedor Docker con acceso a librería NFS masiva. Configurado con paso de dispositivos `/dev/dri` para permitir transcodificación 4K por hardware en tiempo real.',
+      title: 'Diseño & Impresión 3D',
+      description: 'Especialista en fabricación digital con Ender 3S1 Plus/Pro y Ender HI con CFS. Prototipado rápido y modelado avanzado en Tinkercad.',
+      link: '#',
+      image: tinkercadImg
+    },
+    {
+      title: 'Centro Multimedia Plex',
+      description: 'Servidor de medios optimizado con acceso NFS directo. Soporta transcodificación 4K por hardware para una reproducción fluida.',
       link: '#',
       image: plexImg
     },
     {
-      title: 'Specra (SpectralCode)',
-      description: 'Herramienta avanzada de análisis forense y visualización de trazas espectrales. Procesamiento de señales en tiempo real e identificación de patrones complejos.',
+      title: 'Nube Privada Nextcloud',
+      description: 'Almacenamiento y sincronización de archivos totalmente privado. Independencia total de servicios externos con seguridad reforzada.',
       link: '#',
-      image: specraImg
+      image: nextcloudLogo
     },
     {
-      title: 'Gastium IA',
-      description: 'Asistente inteligente de control financiero integrado con Gemini. Automatiza la lectura de tickets mediante OCR, clasifica consumos dinámicamente y genera reportes de optimización de gastos.',
-      link: 'https://Yoeph.pythonanywhere.com',
-      image: gastiumIaImg
+      title: 'Specra (Análisis Espectral)',
+      description: 'Herramienta avanzada de análisis forense y visualización de trazas espectrales para identificación de patrones complejos en tiempo real.',
+      link: '#',
+      image: specraImg
     }
   ];
 

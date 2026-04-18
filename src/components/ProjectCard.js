@@ -1,16 +1,16 @@
 import React from "react";
 
-const ProjectCard = ({ title, description, link, image, overlayText, objectFit = "cover" }) => {
+const ProjectCard = ({ title, description, link, image, overlayText, objectFit = "contain" }) => {
   return (
     <div className="col-md-6 mb-4">
       <div className="card h-100 glass-card reveal border-0">
-        <div className="image-container">
+        <div className="image-container p-3" style={{ backgroundColor: '#f8f9fa' }}>
           {image && (
             <img
               src={image}
-              className="card-img-top"
+              className="card-img-top rounded"
               alt={title}
-              style={{ height: "250px", objectFit: objectFit, backgroundColor: objectFit === "contain" ? "#040b18" : "transparent" }}
+              style={{ height: "200px", objectFit: objectFit }}
             />
           )}
           {overlayText && <div className="image-overlay">{overlayText}</div>}
