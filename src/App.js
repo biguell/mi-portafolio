@@ -7,13 +7,9 @@ import './App.css';
 
 import homeAssistantImg from './assets/containers/home_assistant.png';
 import plexImg from './assets/containers/plex.png';
-import nextcloudImg from './assets/containers/nextcloud.png';
 import ramboDashImg from './assets/containers/rambo_dashboard.png';
 import raspiDashImg from './assets/containers/raspi_dashboard.png';
 import specraImg from './assets/containers/specra_trace.png';
-import turnoIcon from './assets/containers/turno_control_icon.png';
-import nextcloudLogo from './assets/containers/nextcloud_logo.png';
-import nextcloudHubImg from './assets/containers/nextcloud_hub.png';
 import esp32Img from './assets/containers/esp32.png';
 import turnosProIcon from './assets/containers/staria_escoba_icon.png';
 import gastiumIaImg from './assets/containers/gastium_ia_v1250_mockup.png'; // Mockup AI original
