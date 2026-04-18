@@ -3,7 +3,7 @@ import base64
 import json
 import re
 
-build_dir = r"c:\Users\jluis\MisProyectos\MiProyectoGemini\portfolio-app\build"
+build_dir = r"C:\Users\jluis\Nextcloud\proyectos\portfolio-app\build"
 manifest_path = os.path.join(build_dir, "asset-manifest.json")
 output_path = r"c:\Users\jluis\Desktop\portafolio_jose_luis.html"
 

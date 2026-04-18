@@ -21,14 +21,51 @@ import gastiumIaImg from './assets/containers/gastium_ia_v1250_mockup.png'; // M
 function App() {
   const projects = [
     {
-      title: 'Sistema de Domótica (Home Assistant)',
-      description: 'Centralización de toda la inteligencia del hogar: control de iluminación, sensores de movimiento, temperatura, riego automático y gestión de escenas. Ejecutándose en un contenedor Docker sobre Raspi.',
+      title: 'Infraestructura Segura (Rambo NAS)',
+      description: 'NAS principal basado en OMV 7 con "Hardening" avanzado (Lynis 80+). Implementa seguridad multicapa con Fail2ban nativo, AIDE (integridad), rkhunter y ClamAV. Sistema de copias de seguridad BorgBackup cifrado y automatizado.',
+      link: '#',
+      image: ramboDashImg
+    },
+    {
+      title: 'Servidor de Aplicaciones (Raspi)',
+      description: 'Gestión de infraestructura distribuida mediante Docker y Portainer. "Cerebro-Stack" unificado que integra Plex, Home Assistant y Mosquitto, optimizado con transcodificación por hardware y persistencia vía NFS desde Rambo.',
+      link: '#',
+      image: raspiDashImg
+    },
+    {
+      title: 'App de Defensa Unificada',
+      description: 'Dashboard integral desarrollado en Flask que centraliza alertas de seguridad de red (Suricata) y monitorización de integridad de archivos (PowerShell FIM) en tiempo real para entornos críticos de Windows.',
+      link: '#',
+      image: ramboDashImg // Usando Rambo como placeholder si no hay imagen específica
+    },
+    {
+      title: 'Alexa + Gemini: Mi Asistente IA',
+      description: 'Integración avanzada de una Alexa Skill con el modelo Gemini de Google (IA). Desarrollado con AWS Lambda en Python, permitiendo consultas complejas de IA generativa desde dispositivos Echo.',
+      link: '#',
+      image: gastiumIaImg
+    },
+    {
+      title: 'Escoba Drivers (v15.9.8)',
+      description: 'PWA avanzada para gestión de turnos. Incluye el algoritmo de "Justicia Histórica" para asignaciones equitativas, persistencia de datos 100% garantizada, optimización específica para iOS/iPhone y control de movimientos.',
+      link: 'https://Yoeph.pythonanywhere.com',
+      image: turnosProIcon
+    },
+    {
+      title: 'Domótica Avanzada (Home Assistant)',
+      description: 'Centralización de inteligencia hogareña en Raspi. Gestión de red Zigbee propia, integración de dispositivos Tuya/Philips Hue y sensores locales, con acceso seguro mediante VPN WireGuard.',
       link: '#',
       image: homeAssistantImg
     },
     {
-      title: 'Centro Multimedia (Plex)',
-      description: 'Servidor de contenido multimedia personal con acceso a películas, series y música organizada. Gestionado mediante Docker y balanceado para un streaming fluido dentro de la red privada.',
+      title: 'K2-RFID IoT System',
+      description: 'Desarrollo de hardware y software basado en ESP32 y el kit RFID RC522. Gestión de lectura/escritura de etiquetas MIFARE Classic 1k con integración en red para control de accesos.',
+      link: '#',
+      image: esp32Img,
+      overlayText: 'ESP32/RFID'
+    },
+    {
+      title: 'Centro Multimedia Optimizado',
+      description: 'Servidor Plex en contenedor Docker con acceso a librería NFS masiva. Configurado con paso de dispositivos `/dev/dri` para permitir transcodificación 4K por hardware en tiempo real.',
       link: '#',
       image: plexImg
     },
@@ -39,45 +76,8 @@ function App() {
       image: specraImg
     },
     {
-      title: 'Nube Privada (Nextcloud)',
-      description: 'Almacenamiento y sincronización de archivos, contactos y calendarios de forma totalmente privada, eliminando la dependencia de servicios externos. Desplegado en Rambo.',
-      link: '#',
-      image: nextcloudHubImg
-    },
-    {
-      title: 'Proyectos IoT & Impresión 3D',
-      description: 'Automatización con Arduino y Raspberry Pi, incluyendo lectores RFID y monitorización. Especialista en fabricación digital con tres impresoras 3D: Ender 3S1 Plus, Ender 3S1 Pro y Ender HI con sistema de filamento CFS.',
-      link: '#',
-      image: esp32Img,
-      overlayText: 'ESP32'
-    },
-    {
-      title: 'Dashboard de Sistema (Rambo)',
-      description: 'Estado en tiempo real de Rambo (NAS): monitorización de CPU, RAM, temperatura de discos, estado de Borg Backup y gestión de contenedores Docker activos.',
-      link: '#',
-      image: ramboDashImg
-    },
-    {
-      title: 'Dashboard de Sistema (Raspi)',
-      description: 'Panel de control de Raspi (App Server): métricas de rendimiento y salud de la infraestructura de aplicaciones, incluyendo Portainer, Plex y Home Assistant.',
-      link: '#',
-      image: raspiDashImg
-    },
-    {
-      title: 'TurnosPro (Escoba Drivers)',
-      description: 'Aplicación web para la gestión de turnos y equipos de trabajo. Incluye creación de organizaciones, solicitud de días libres, cambios de horario y registro de auditoría. Alojado localmente y accesible mediante VPN WireGuard.',
-      link: '#',
-      image: turnosProIcon
-    },
-    {
-      title: 'Gestión de Turnos',
-      description: 'Sistema completo de control de turnos y movimientos de conductores. Es accesible públicamente en internet, desplegado en https://www.turnocontrolpro.com',
-      link: 'https://www.turnocontrolpro.com',
-      image: turnoIcon
-    },
-    {
-      title: 'Gastium IA (v12.50)',
-      description: 'Asistente de Inteligencia Artificial (Gemini) integrado en el control de gastos. Automatiza la lectura de tickets (OCR), clasifica consumos y optimiza presupuestos.',
+      title: 'Gastium IA',
+      description: 'Asistente inteligente de control financiero integrado con Gemini. Automatiza la lectura de tickets mediante OCR, clasifica consumos dinámicamente y genera reportes de optimización de gastos.',
       link: 'https://Yoeph.pythonanywhere.com',
       image: gastiumIaImg
     }
@@ -96,13 +96,13 @@ function App() {
               <div className="col-lg-5 reveal">
                 <h2 className="fw-bold mb-4">Sobre Mí</h2>
                 <p className="lead text-dark">
-                  Soy José Luis Izquierdo Echuaca, técnico y desarrollador autodidacta con pasión por la tecnología. 
-                  Administro mi propia infraestructura de servidores formada por dos Raspberry Pi: 
-                  <strong>Raspi</strong> y <strong>Rambo</strong>. 
+                  Soy José Luis Izquierdo Echuaca, técnico y desarrollador autodidacta con pasión por la tecnología y la ciberseguridad. 
+                  Administro mi propia infraestructura de servidores de alta disponibilidad: 
+                  <strong>Rambo</strong> (NAS/Seguridad) y <strong>Raspi</strong> (App Server). 
                 </p>
                 <p className="text-muted">
-                  Gestiono servicios críticos bajo contenedores Docker y mantengo una red privada segura mediante WireGuard. 
-                  Mi experiencia abarca desde el desarrollo de software en Python hasta la fabricación digital y automatización física.
+                  Especialista en "Hardening" de sistemas Linux, despliegue de microservicios con Docker y desarrollo de soluciones 
+                  basadas en IA (Gemini API) y Python. Mi enfoque combina la robustez del hardware con la agilidad del software moderno.
                 </p>
                 <div className="mt-4">
                   <a href="#contact" className="btn btn-outline-primary px-4 fw-bold">Contactar</a>
@@ -116,17 +116,17 @@ function App() {
                     <h5 className="fw-bold mb-3 mt-2"><i className="bi bi-cpu me-2"></i>Hardware & DevOps</h5>
                     <div className="skill-item">
                       <div className="d-flex justify-content-between">
-                        <span>Raspberry Pi / Linux</span>
+                        <span>Raspberry Pi / Linux / Hardening</span>
                         <span className="fw-bold text-primary">Experto</span>
                       </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '95%' }}></div></div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '98%' }}></div></div>
                     </div>
                     <div className="skill-item">
                       <div className="d-flex justify-content-between">
-                        <span>Docker / Portainer</span>
-                        <span className="fw-bold text-primary">Avanzado</span>
+                        <span>Docker / Portainer / NFS</span>
+                        <span className="fw-bold text-primary">Experto</span>
                       </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%' }}></div></div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '92%' }}></div></div>
                     </div>
                     <div className="skill-item">
                       <div className="d-flex justify-content-between">
@@ -137,10 +137,10 @@ function App() {
                     </div>
                     <div className="skill-item">
                       <div className="d-flex justify-content-between">
-                        <span>WireGuard / Redes</span>
-                        <span className="fw-bold text-primary">Intermedio</span>
+                        <span>WireGuard / VPN / Redes</span>
+                        <span className="fw-bold text-primary">Avanzado</span>
                       </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '70%' }}></div></div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%' }}></div></div>
                     </div>
                   </div>
                   
@@ -148,17 +148,17 @@ function App() {
                     <h5 className="fw-bold mb-3 mt-2"><i className="bi bi-code-slash me-2"></i>Software & Desarrollo</h5>
                     <div className="skill-item">
                       <div className="d-flex justify-content-between">
-                        <span>Python (Flask / Scripts)</span>
+                        <span>Python (Flask / IA Gemini)</span>
                         <span className="fw-bold text-primary">Avanzado</span>
                       </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%' }}></div></div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '90%' }}></div></div>
                     </div>
                     <div className="skill-item">
                       <div className="d-flex justify-content-between">
-                        <span>Git / GitHub</span>
-                        <span className="fw-bold text-primary">Intermedio</span>
+                        <span>PowerShell / Bash Scripting</span>
+                        <span className="fw-bold text-primary">Avanzado</span>
                       </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '75%' }}></div></div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%' }}></div></div>
                     </div>
                     <div className="skill-item">
                       <div className="d-flex justify-content-between">
@@ -169,10 +169,10 @@ function App() {
                     </div>
                     <div className="skill-item">
                       <div className="d-flex justify-content-between">
-                        <span>Arduino / Electrónica</span>
-                        <span className="fw-bold text-primary">Intermedio</span>
+                        <span>Ciberseguridad (FIM / Suricata)</span>
+                        <span className="fw-bold text-primary">Avanzado</span>
                       </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '70%' }}></div></div>
+                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '80%' }}></div></div>
                     </div>
                   </div>
                 </div>
