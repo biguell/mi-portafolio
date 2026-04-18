@@ -11,19 +11,32 @@ import ramboDashImg from './assets/containers/rambo_dashboard.png';
 import raspiDashImg from './assets/containers/raspi_dashboard.png';
 import specraImg from './assets/containers/specra_trace.png';
 import esp32Img from './assets/containers/esp32.png';
-import stariaEscobaImg from './assets/containers/staria_escoba_icon.png';
 import gastiumIaImg from './assets/containers/gastium_ia_v1250_mockup.png';
 import tinkercadImg from './assets/containers/tinkercad.png';
 import turnosProImg from './assets/containers/turnospro_icon.png';
 import nextcloudLogo from './assets/containers/nextcloud_logo.png';
+import turnoControlImg from './assets/containers/turno_control_icon.png';
+import stariaEscobaImg from './assets/containers/staria_escoba_icon.png';
 
 function App() {
   const projects = [
     {
-      title: 'Infraestructura Segura (Rambo NAS)',
-      description: 'Servidor central (192.168.2.35) con OMV 7. "Hardening" avanzado (Lynis 80+), seguridad multicapa con Fail2ban, AIDE y BorgBackup cifrado.',
+      title: 'Rambo Infrastructure Engine',
+      description: 'Arquitectura de red personalizada con monitorización avanzada (Rambo Monitor). Incluye mapas de red dinámicos, dashboards de estado de salud y automatización de despliegues mediante SSH/SCP para toda la infraestructura de servidores.',
       link: '#',
       image: ramboDashImg
+    },
+    {
+      title: 'TurnoControlPro (Sistema Empresarial)',
+      description: 'Plataforma líder para la gestión operativa de conductores bajo dominio www.turnocontrolpro.com. Integra base de datos MySQL relacional, auditoría v5.0 y un sistema robusto de informes para entornos corporativos de alta demanda.',
+      link: 'https://www.turnocontrolpro.com',
+      image: turnoControlImg
+    },
+    {
+      title: 'Escoba Drivers (v16.0)',
+      description: 'Versión ágil (PWA) de gestión de turnos con el algoritmo de "Justicia Histórica", persistencia total y optimización extrema para dispositivos móviles iPhone/iOS.',
+      link: 'https://Yoeph.pythonanywhere.com',
+      image: stariaEscobaImg
     },
     {
       title: 'Servidor de Aplicaciones (Raspi)',
@@ -32,16 +45,10 @@ function App() {
       image: raspiDashImg
     },
     {
-      title: 'TurnoControlPro (Sistema Empresarial)',
-      description: 'Plataforma robusta para la gestión masiva de conductores. Arquitectura basada en MySQL, con sistema de auditoría v5.0, informes automáticos y despliegue corporativo bajo dominio propio.',
-      link: 'https://www.turnocontrolpro.com',
-      image: turnosProImg
-    },
-    {
-      title: 'Escoba Drivers (v16.0)',
-      description: 'Versión ágil (PWA) de gestión de turnos con el algoritmo de "Justicia Histórica", persistencia total y optimización extrema para dispositivos móviles iPhone/iOS.',
-      link: 'https://Yoeph.pythonanywhere.com',
-      image: stariaEscobaImg
+      title: 'Infraestructura Segura (Rambo NAS)',
+      description: 'Servidor central (192.168.2.35) con OMV 7. "Hardening" avanzado (Lynis 80+), seguridad multicapa con Fail2ban, AIDE y BorgBackup cifrado.',
+      link: '#',
+      image: ramboDashImg
     },
     {
       title: 'Alexa + Gemini: Mi Asistente IA',
