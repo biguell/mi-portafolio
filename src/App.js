@@ -32,8 +32,14 @@ function App() {
       image: raspiDashImg
     },
     {
+      title: 'TurnoControlPro (Sistema Empresarial)',
+      description: 'Plataforma robusta para la gestión masiva de conductores. Arquitectura basada en MySQL, con sistema de auditoría v5.0, informes automáticos y despliegue corporativo bajo dominio propio.',
+      link: 'https://www.turnocontrolpro.com',
+      image: turnosProImg
+    },
+    {
       title: 'Escoba Drivers (v16.0)',
-      description: 'Versión definitiva de gestión de turnos con algoritmo de "Justicia Histórica", persistencia total y optimización extrema para iPhone/iOS.',
+      description: 'Versión ágil (PWA) de gestión de turnos con el algoritmo de "Justicia Histórica", persistencia total y optimización extrema para dispositivos móviles iPhone/iOS.',
       link: 'https://Yoeph.pythonanywhere.com',
       image: stariaEscobaImg
     },
