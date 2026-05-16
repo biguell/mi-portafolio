@@ -166,15 +166,29 @@ function App() {
                   Arquitecto de sistemas con enfoque en la convergencia entre <strong>IA, Seguridad y Hardware</strong>.
                   Mi perfil combina la robustez de DevOps con la agilidad del desarrollo full-stack.
                 </p>
-                <div className="d-flex gap-4 mb-4">
-                  <div className="text-center">
-                    <h3 className="fw-bold text-white mb-0">14</h3>
-                    <small className="text-muted text-uppercase" style={{ fontSize: '0.6rem', letterSpacing: '0.5px' }}>Servicios Desplegados</small>
+                <div className="d-flex flex-column gap-3 mt-4">
+                  <div className="d-flex align-items-start gap-3 p-3 rounded-4" style={{ background: 'rgba(255, 255, 255, 0.015)', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                    <div className="lh-1 text-center" style={{ minWidth: '55px' }}>
+                      <span className="fs-2 fw-bold text-white">14</span>
+                    </div>
+                    <div className="border-start border-secondary border-opacity-25 ps-3">
+                      <div className="fw-bold text-white small" style={{ letterSpacing: '0.5px' }}>Servicios Desplegados</div>
+                      <div className="text-secondary small mt-1" style={{ fontSize: '0.78rem', lineHeight: '1.4' }}>
+                        Contenedores Docker, bases de datos relacionales y aplicaciones web reales configuradas y corriendo en producción de extremo a extremo.
+                      </div>
+                    </div>
                   </div>
-                  <div className="vr text-secondary opacity-25"></div>
-                  <div className="text-center">
-                    <h3 className="fw-bold text-white mb-0">98%</h3>
-                    <small className="text-muted text-uppercase" style={{ fontSize: '0.6rem', letterSpacing: '0.5px' }}>Disponibilidad (Uptime)</small>
+
+                  <div className="d-flex align-items-start gap-3 p-3 rounded-4" style={{ background: 'rgba(255, 255, 255, 0.015)', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                    <div className="lh-1 text-center" style={{ minWidth: '55px' }}>
+                      <span className="fs-2 fw-bold text-accent">98%</span>
+                    </div>
+                    <div className="border-start border-secondary border-opacity-25 ps-3">
+                      <div className="fw-bold text-white small" style={{ letterSpacing: '0.5px' }}>Disponibilidad (Uptime)</div>
+                      <div className="text-secondary small mt-1" style={{ fontSize: '0.78rem', lineHeight: '1.4' }}>
+                        Infraestructura tolerante a fallos mediante políticas automáticas de auto-recuperación y copias de seguridad cifradas diarias (Borg).
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
