@@ -21,8 +21,8 @@ import stariaEscobaImg from './assets/containers/staria_escoba_icon.png';
 function App() {
   const projects = [
     {
-      title: 'Rambo Infrastructure Engine',
-      description: 'Arquitectura de red personalizada con monitorización avanzada (Rambo Monitor). Incluye mapas de red dinámicos, dashboards de estado de salud y automatización de despliegues mediante SSH/SCP para toda la infraestructura de servidores.',
+      title: 'Rambo Infrastructure Engine (v18.9.5)',
+      description: 'Ecosistema de monitorización unificado con arquitectura "Neon-Motion". Incluye protocolo Synergy con IA Auto-Healer para autoreparación de servicios, auditoría de salud v18.9.5 y gestión centralizada de seguridad en Debian Bookworm.',
       link: '#',
       image: ramboDashImg
     },
@@ -39,14 +39,14 @@ function App() {
       image: stariaEscobaImg
     },
     {
-      title: 'Servidor de Aplicaciones (Raspi)',
-      description: 'Gestión de infraestructura distribuida (192.168.2.16). "Cerebro-Stack" unificado con Docker, Portainer y transcodificación por hardware.',
+      title: 'Servidor de Aplicaciones (Raspi v18.9.5)',
+      description: 'Nodo distribuido (192.168.2.16) totalmente sincronizado con Rambo. Ejecuta contenedores críticos (Plex, HA) bajo monitorización continua y sistemas de limpieza de registros automatizados mediante IA.',
       link: '#',
       image: raspiDashImg
     },
     {
       title: 'Infraestructura Segura (Rambo NAS)',
-      description: 'Servidor central (192.168.2.35) con OMV 7. "Hardening" avanzado (Lynis 80+), seguridad multicapa con Fail2ban, AIDE y BorgBackup cifrado.',
+      description: 'Servidor central (192.168.2.35) con OMV 7. "Hardening" avanzado (Lynis 80+), seguridad multicapa con Fail2ban, rkhunter y AIDE para detección de intrusiones en tiempo real.',
       link: '#',
       image: ramboDashImg
     },
