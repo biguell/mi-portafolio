@@ -188,33 +188,33 @@ function App() {
                       <div className="skill-item-inner mb-3">
                         <div className="d-flex justify-content-between small mb-1">
                           <span>Raspberry Pi / Linux / Hardening</span>
-                          <span className="text-primary fw-bold">Experto</span>
+                          <span style={{ color: '#00ff88' }} className="fw-bold">Experto</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '98%' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '98%', background: 'linear-gradient(90deg, #00ff88, #10b981)' }}></div></div>
                       </div>
 
                       <div className="skill-item-inner mb-3">
                         <div className="d-flex justify-content-between small mb-1">
                           <span>Docker / Portainer / NFS</span>
-                          <span className="text-primary fw-bold">Experto</span>
+                          <span style={{ color: '#00ff88' }} className="fw-bold">Experto</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '96%' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '96%', background: 'linear-gradient(90deg, #00ff88, #10b981)' }}></div></div>
                       </div>
 
                       <div className="skill-item-inner mb-3">
                         <div className="d-flex justify-content-between small mb-1">
                           <span>Impresión & Diseño 3D</span>
-                          <span className="text-primary fw-bold">Experto</span>
+                          <span style={{ color: '#00ff88' }} className="fw-bold">Experto</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '95%' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '95%', background: 'linear-gradient(90deg, #00ff88, #10b981)' }}></div></div>
                       </div>
 
                       <div className="skill-item-inner">
                         <div className="d-flex justify-content-between small mb-1">
                           <span>WireGuard / VPN / Redes</span>
-                          <span className="text-info fw-bold">Avanzado</span>
+                          <span style={{ color: '#00d2ff' }} className="fw-bold">Avanzado</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '88%', background: 'linear-gradient(90deg, #0dcaf0, #00d2ff)' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '88%', background: 'linear-gradient(90deg, #00d2ff, #3a7bd5)' }}></div></div>
                       </div>
                     </div>
                   </div>
@@ -226,25 +226,25 @@ function App() {
                       <div className="skill-item-inner mb-3">
                         <div className="d-flex justify-content-between small mb-1">
                           <span>Python (Flask / IA Gemini)</span>
-                          <span className="text-info fw-bold">Avanzado</span>
+                          <span style={{ color: '#00d2ff' }} className="fw-bold">Avanzado</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '90%', background: 'linear-gradient(90deg, #0dcaf0, #00d2ff)' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '90%', background: 'linear-gradient(90deg, #00d2ff, #3a7bd5)' }}></div></div>
                       </div>
 
                       <div className="skill-item-inner mb-3">
                         <div className="d-flex justify-content-between small mb-1">
                           <span>PowerShell / Bash Scripting</span>
-                          <span className="text-info fw-bold">Avanzado</span>
+                          <span style={{ color: '#00d2ff' }} className="fw-bold">Avanzado</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '92%', background: 'linear-gradient(90deg, #0dcaf0, #00d2ff)' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '92%', background: 'linear-gradient(90deg, #00d2ff, #3a7bd5)' }}></div></div>
                       </div>
 
                       <div className="skill-item-inner mb-3">
                         <div className="d-flex justify-content-between small mb-1">
                           <span>Ciberseguridad (FIM / Suricata)</span>
-                          <span className="text-info fw-bold">Avanzado</span>
+                          <span style={{ color: '#00d2ff' }} className="fw-bold">Avanzado</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%', background: 'linear-gradient(90deg, #0dcaf0, #00d2ff)' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%', background: 'linear-gradient(90deg, #00d2ff, #3a7bd5)' }}></div></div>
                       </div>
 
                       <div className="skill-item-inner">
