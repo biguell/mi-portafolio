@@ -1,0 +1,979 @@
+:root {
+    --primary-color: #6366f1;
+    --primary-hover: #4f46e5;
+    --bg-gradient-start: #0f172a;
+    --bg-gradient-end: #1e293b;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: rgba(148, 163, 184, 0.1);
+    --glow-color: rgba(99, 102, 241, 0.5);
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    color: var(--text-main);
+    min-height: 100vh;
+    z-index: 0;
+}
+
+.login-container,
+.activation-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.login-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #fff, #cbd5e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.version-badge {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 12px;
+    border-radius: 9999px;
+    border: 1px solid var(--border-color);
+    font-weight: 500;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.input-group input::placeholder {
+    color: rgba(148, 163, 184, 0.5);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.forgot-password {
+    font-size: 0.875rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.forgot-password:hover {
+    color: #818cf8;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.form-footer {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.new-account {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.new-account:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Calendar Styles - High Contrast (Yellow/Black) */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    background: #000;
+    color: #FFC300;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.calendar-header button {
+    color: #FFC300 !important;
+    /* Force yellow icons in header */
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    text-align: center;
+}
+
+.day-cell {
+    padding: 10px 5px;
+    background: #FFC300;
+    /* Vibrant Yellow */
+    color: #000000;
+    /* Pure Black */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    /* Larger text */
+    font-weight: 900;
+    /* Extra Bold */
+    border: 2px solid #000;
+    /* Black Border */
+    box-shadow: 2px 2px 0px #000;
+    /* Hard shadow for pop */
+}
+
+.day-cell:hover {
+    background: #ffdb4d;
+    /* Lighter yellow */
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px #000;
+}
+
+.day-cell:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px #000;
+}
+
+.day-cell.empty {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: default;
+}
+
+.day-cell.today {
+    background: #000000;
+    /* Inverted for Today */
+    color: #FFC300;
+    border: 2px solid #FFC300;
+}
+
+.day-cell.selected {
+    border: 3px solid #000 !important;
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff !important;
+    /* White pop for selection */
+    color: #000 !important;
+}
+
+/* Day Types - High Contrast Overrides */
+.day-cell.has-event-Vacaciones {
+    background: #0d6efd;
+    /* Blue for high contrast */
+    color: #FFF;
+    border-color: #000;
+}
+
+.day-cell.has-event-Baja {
+    background: #CC0000;
+    color: #FFF;
+    border-color: #000;
+}
+
+/* Keep White text on Red for readabilty */
+.day-cell.has-event-Asuntos {
+    background: #D35400;
+    color: #FFF;
+    border-color: #000;
+}
+
+.day-cell.has-event-Libre {
+    background: #6c757d;
+    color: #FFF;
+    border-color: #000;
+}
+
+.day-cell.is-weekly-off {
+    opacity: 0.6;
+    background: #ddd;
+    color: #555;
+    border: 1px dashed #000;
+    box-shadow: none;
+}
+
+.day-header {
+    font-weight: 900;
+    font-size: 0.9rem;
+    color: #000;
+    /* Black headers */
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+/* Dashboard Styles */
+.hidden {
+    display: none !important;
+}
+
+.dashboard-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #333;
+    overflow-y: auto;
+}
+
+.hero-header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+.hero-body {
+    padding: 30px 20px;
+}
+
+.hero-body h1 {
+    font-size: 2.5rem;
+    color: #212529;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-danger,
+.btn-outline {
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    flex: 1;
+    min-width: 140px;
+    max-width: 200px;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-outline {
+    background: white;
+    color: #28a745;
+    border: 2px solid #28a745;
+}
+
+/* Drivers Grid */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0 5px;
+}
+
+.section-header h2 {
+    font-size: 1rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-blue-sm {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* --- NEW DRIVER CARD STYLES --- */
+.drivers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.driver-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 8px 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    height: 230px !important;
+    /* Force fixed height for uniformity */
+}
+
+.driver-card.broom-assigned {
+    border-color: #28a745;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.4);
+    border-width: 3px;
+}
+
+.driver-card.reinforcement-assigned {
+    border-color: #ffc107;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+    border-width: 3px;
+}
+
+/* Status Border Colors - High Contrast */
+.border-active {
+    border: 2px solid #008000;
+    border-left-width: 8px;
+    /* Thicker left border */
+    box-shadow: -8px 0 15px -4px rgba(0, 128, 0, 0.5);
+}
+
+.border-baja {
+    border: 2px solid #CC0000;
+    border-left-width: 8px;
+    background-color: #fff0f0;
+    box-shadow: -8px 0 15px -4px rgba(204, 0, 0, 0.5);
+}
+
+.border-vacaciones {
+    border: 2px solid #E69500;
+    border-left-width: 8px;
+    background-color: #fffbf0;
+    box-shadow: -8px 0 15px -4px rgba(230, 149, 0, 0.5);
+}
+
+.border-asuntos {
+    border: 2px solid #D35400;
+    border-left-width: 8px;
+    background-color: #fff5e8;
+    box-shadow: -8px 0 15px -4px rgba(211, 84, 0, 0.5);
+}
+
+.border-dayoff {
+    border: 2px solid #E69500;
+    border-left-width: 8px;
+    background-color: #fffff0;
+    border-style: dashed;
+    border-left-style: solid;
+    /* Keep left solid for visibility? Or keep dashed? User said "contorno", usually implies solid bar. Let's keep it dashed for dayoff consistency or solid? The prompt implies a "strip". Let's stick to the base style but wider. */
+    box-shadow: -8px 0 15px -4px rgba(230, 149, 0, 0.5);
+}
+
+.card-header-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+/* Remove any unwanted shadows/borders from icons */
+i,
+.fa-solid,
+.fa-brands {
+    text-shadow: none !important;
+    -webkit-text-stroke: 0 !important;
+    border: none !important;
+}
+
+.large-status-icon {
+    font-size: 1.8rem;
+    color: #000000;
+    /* Fallback to Black */
+    font-weight: 900;
+}
+
+.large-status-icon.status-active {
+    color: #008000;
+}
+
+.large-status-icon.status-baja {
+    color: #CC0000;
+}
+
+.large-status-icon.status-vacaciones {
+    color: #E69500;
+}
+
+.large-status-icon.status-asuntos {
+    color: #D35400;
+}
+
+.card-action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-icon,
+.btn-icon-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #6c757d;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-icon:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+.btn-icon-delete:hover {
+    background-color: #f8d7da;
+    color: #dc3545;
+}
+
+.btn-whatsapp {
+    color: #25D366 !important;
+}
+
+.btn-whatsapp:hover {
+    background-color: #e6ffed;
+}
+
+.btn-whatsapp i {
+    -webkit-text-stroke: 1px #25D366;
+    /* Simulate bold */
+    font-weight: 900;
+    /* Try standard bold too */
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.driver-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000000;
+    /* Pure black for high contrast */
+    margin-bottom: 2px;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* NEW, MORE SPECIFIC STATUS BADGE STYLES - HIGH CONTRAST */
+.driver-status-text .status-badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    min-width: 80px;
+    color: white;
+    /* Default white text */
+}
+
+.driver-status-text .status-badge.status-active {
+    background: #008000;
+    color: white;
+}
+
+.driver-status-text .status-badge.status-asuntos {
+    background: #D35400;
+    color: white;
+}
+
+.driver-status-text .status-badge.status-baja {
+    background: #CC0000;
+    color: white;
+}
+
+.driver-status-text .status-badge.status-vacaciones {
+    background: #E69500;
+    color: black;
+    /* Better contrast on yellow/amber */
+}
+
+.driver-last-seen,
+.driver-updated-by {
+    font-size: 0.8rem;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+/* Animations */
+@keyframes slide-horizontal {
+    0% {
+        transform: translateX(-15px);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(-15px);
+    }
+}
+
+.anim-slide {
+    display: inline-block;
+    /* Ensure transform works */
+    animation: slide-horizontal 2s ease-in-out infinite;
+}
+
+.driver-last-seen i,
+.driver-days-off i {
+    color: #000000;
+    /* Pure Black */
+    font-weight: 900;
+    /* Bold */
+    margin-right: 5px;
+    width: 20px;
+    text-align: center;
+}
+
+.driver-days-off span {
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Reinforcements */
+.reinforcements-list {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.reinforcement-item {
+    background: #f8f9fa;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    color: #212529;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #dee2e6;
+    width: 100%;
+    max-width: 300px;
+    justify-content: space-between;
+}
+
+.btn-text-danger {
+    background: none;
+    border: 2px solid #dc3545;
+    /* Border for better visibility */
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    /* Bigger hit area */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn-text-danger:hover {
+    background: #dc3545;
+    color: white;
+    transform: scale(1.05);
+    /* Visual feedback */
+}
+
+.delete-reinforcement-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 5px;
+    line-height: 1;
+}
+
+.delete-reinforcement-btn:hover {
+    color: #a71d2a;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* Activation Screen */
+.activation-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.checkbox-label input {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-activate {
+    width: 100%;
+    padding: 14px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .hero-body h1 {
+        font-size: 2rem;
+    }
+
+    .btn-danger,
+    .btn-outline {
+        width: 100%;
+        max-width: none;
+    }
+
+    .drivers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .driver-card {
+        padding: 15px;
+    }
+
+    .large-status-icon {
+        font-size: 2rem;
+    }
+
+    .driver-name {
+        font-size: 1.4rem;
+    }
+
+    .driver-last-seen,
+    .driver-days-off {
+        font-size: 0.85rem;
+    }
+
+    .modal-content {
+        padding: 20px;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Notification Styles */
+.notification-overlay {
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.notification-content h2 {
+    font-size: 1.5rem;
+    color: #28a745;
+    /* Green for success */
+    margin-bottom: 15px;
+}
+
+.notification-content p {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-bottom: 25px;
+}
+
+/* Pending Event Pattern (Stripes) */
+.day-cell.event-pending {
+    background-image: repeating-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.3) 10px,
+            transparent 10px,
+            transparent 20px);
+    border: 2px dashed #666;
+}
+
+/* Validation Controls */
+.validation-controls {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-approve {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-reject {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Notification Badge on Card */
+.pending-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #dc3545;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+    }
+
+    70% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
+}
+
+/* Neon Motion & Hub Styles */
+.neon-motion {
+    animation: neon-pulse 3s infinite ease-in-out;
+}
+
+@keyframes neon-pulse {
+    0% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.2); border-color: rgba(99, 102, 241, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.5); border-color: rgba(99, 102, 241, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(99, 102, 241, 0.2); border-color: rgba(99, 102, 241, 0.3); }
+}
+
+.project-card {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.professional-links a {
+    transition: all 0.3s ease;
+}
+
+.professional-links a:hover {
+    transform: scale(1.15) rotate(5deg);
+    background: rgba(255,255,255,0.2) !important;
+}
+
+/* Specific Hub Responsive */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

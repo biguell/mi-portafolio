@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: plex
+    network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=Europe/Madrid
+      - VERSION=docker
+      - PLEX_CLAIM=claim-x1E1Cz46H5Jstf1nieQQ
+    volumes:
+        - /srv/dev-disk-by-uuid-43d7400e-18d1-43c7-9eae-3fefafd4eae1/ssd250/plex_config:/config
+        - /srv/remotemount/media:/media
+    restart: unless-stopped
