@@ -16,6 +16,7 @@ import turnosProImg from './assets/containers/turnospro_icon.png';
 import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 import turnoControlImg from './assets/containers/turno_control_icon.png';
 import stariaEscobaImg from './assets/containers/staria_escoba_icon.png';
+import alexaImg from './assets/containers/alexa.svg';
 
 function App() {
   const projectCategories = [
@@ -65,7 +66,7 @@ function App() {
           title: 'Alexa + Gemini: Asistente IA',
           description: 'Skill de Alexa conectada a Gemini mediante AWS Lambda. Razonamiento avanzado por voz en lenguaje natural.',
           link: '#',
-          image: gastiumIaImg
+          image: alexaImg
         },
         {
           title: 'Gastium IA: Control Financiero',
