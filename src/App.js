@@ -318,16 +318,60 @@ function App() {
         {/* Section: Contact */}
         <section id="contact" className="py-5 bg-darker border-top border-secondary border-opacity-10">
           <div className="container px-4">
+            <div className="text-center mb-5 reveal">
+              <h2 className="fw-bold text-white mb-3 section-title">Servicios a Terceros & Consultoría Freelance</h2>
+              <p className="text-secondary mx-auto mb-4" style={{ maxWidth: '700px' }}>
+                ¿Buscas soluciones técnicas de alta gama o quieres externalizar el desarrollo de tu proyecto? Ofrezco servicios profesionales especializados.
+              </p>
+            </div>
+
+            <div className="row g-4 mb-5 justify-content-center">
+              <div className="col-md-4 reveal" style={{ animationDelay: '0.1s' }}>
+                <div className="card h-100 glass-card p-4 border-0">
+                  <div className="category-icon-wrapper mb-3" style={{ background: 'rgba(0, 210, 255, 0.08)' }}>
+                    <i className="bi bi-code-slash text-primary"></i>
+                  </div>
+                  <h5 className="text-white fw-bold mb-2">Desarrollo de Apps & IA</h5>
+                  <p className="text-secondary small mb-0" style={{ lineHeight: '1.6', fontSize: '0.85rem' }}>
+                    Creación de aplicaciones web a medida, PWAs de alto rendimiento para móviles e integraciones inteligentes con APIs de Inteligencia Artificial (Gemini SDK).
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-md-4 reveal" style={{ animationDelay: '0.2s' }}>
+                <div className="card h-100 glass-card p-4 border-0">
+                  <div className="category-icon-wrapper mb-3" style={{ background: 'rgba(0, 255, 136, 0.08)', borderColor: 'rgba(0, 255, 136, 0.2)' }}>
+                    <i className="bi bi-hdd-network" style={{ color: '#00ff88' }}></i>
+                  </div>
+                  <h5 className="text-white fw-bold mb-2">Infraestructura & DevOps</h5>
+                  <p className="text-secondary small mb-0" style={{ lineHeight: '1.6', fontSize: '0.85rem' }}>
+                    Configuración de servidores NAS y Docker, túneles VPN WireGuard, políticas avanzadas de Hardening/Seguridad y copias Borg automatizadas.
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-md-4 reveal" style={{ animationDelay: '0.3s' }}>
+                <div className="card h-100 glass-card p-4 border-0">
+                  <div className="category-icon-wrapper mb-3" style={{ background: 'rgba(217, 70, 239, 0.08)', borderColor: 'rgba(217, 70, 239, 0.2)' }}>
+                    <i className="bi bi-cpu" style={{ color: '#d946ef' }}></i>
+                  </div>
+                  <h5 className="text-white fw-bold mb-2">IoT & Soluciones a Medida</h5>
+                  <p className="text-secondary small mb-0" style={{ lineHeight: '1.6', fontSize: '0.85rem' }}>
+                    Prototipado inteligente con microcontroladores (ESP32), integración domótica profesional (Home Assistant) y modelado/impresión 3D de piezas físicas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="row justify-content-center">
               <div className="col-lg-7 text-center reveal">
-                <h2 className="fw-bold text-white mb-4 section-title">¿Necesitas una App a Medida?</h2>
-                <p className="lead text-secondary mb-5">
-                  Especializado en el desarrollo de aplicaciones personalizadas, automatización con IA e infraestructuras seguras. 
-                  Cuéntame tu idea y la haremos realidad.
+                <h4 className="fw-bold text-white mb-3">¿Tienes una idea o proyecto en mente?</h4>
+                <p className="text-secondary mb-4 small">
+                  Escríbeme contándome las especificaciones técnicas o funcionales de tu idea y te ofreceré un presupuesto a medida sin compromiso.
                 </p>
                 <div className="d-flex flex-wrap gap-3 justify-content-center">
                   <a href="mailto:jluisie24@gmail.com" className="btn btn-primary btn-lg px-5 fw-bold shadow-neon contact-btn">
-                    <i className="bi bi-rocket-takeoff me-2"></i>Contratar Desarrollo
+                    <i className="bi bi-rocket-takeoff me-2"></i>Contratar Servicios
                   </a>
                   <a href="#projects" className="btn btn-outline-light btn-lg px-4 fw-bold">
                     Ver Portafolio
