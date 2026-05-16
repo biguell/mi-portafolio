@@ -35,7 +35,7 @@ function App() {
     {
       title: 'Escoba Drivers (v16.0)',
       description: 'Versión ágil (PWA) de gestión de turnos con el algoritmo de "Justicia Histórica", persistencia total y optimización extrema para dispositivos móviles iPhone/iOS.',
-      link: 'https://Yoeph.pythonanywhere.com',
+      link: '#',
       image: stariaEscobaImg
     },
     {
@@ -59,7 +59,7 @@ function App() {
     {
       title: 'Gastium IA: Control Financiero',
       description: 'Asistente inteligente de control de gastos integrado con Gemini. Lectura de tickets mediante OCR, clasificación dinámica y optimización de presupuestos.',
-      link: 'https://Yoeph.pythonanywhere.com',
+      link: '#',
       image: gastiumIaImg
     },
     {
