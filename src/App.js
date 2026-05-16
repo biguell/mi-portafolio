@@ -169,12 +169,12 @@ function App() {
                 <div className="d-flex gap-4 mb-4">
                   <div className="text-center">
                     <h3 className="fw-bold text-white mb-0">14</h3>
-                    <small className="text-muted text-uppercase" style={{ fontSize: '0.6rem' }}>Sistemas Activos</small>
+                    <small className="text-muted text-uppercase" style={{ fontSize: '0.6rem', letterSpacing: '0.5px' }}>Servicios Desplegados</small>
                   </div>
                   <div className="vr text-secondary opacity-25"></div>
                   <div className="text-center">
                     <h3 className="fw-bold text-white mb-0">98%</h3>
-                    <small className="text-muted text-uppercase" style={{ fontSize: '0.6rem' }}>Uptime Infra</small>
+                    <small className="text-muted text-uppercase" style={{ fontSize: '0.6rem', letterSpacing: '0.5px' }}>Disponibilidad (Uptime)</small>
                   </div>
                 </div>
               </div>
