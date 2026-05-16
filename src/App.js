@@ -147,8 +147,8 @@ function App() {
                   Transformando complejidad técnica en soluciones operativas.
                 </p>
                 <div className="d-flex gap-3 justify-content-center justify-content-lg-start">
-                  <a href="#projects" className="btn btn-primary btn-lg px-4 fw-bold shadow-neon">Explorar Proyectos</a>
-                  <a href="#about" className="btn btn-outline-light btn-lg px-4 fw-bold">Perfil Técnico</a>
+                  <a href="#contact" className="btn btn-primary btn-lg px-4 fw-bold shadow-neon">Contratar App</a>
+                  <a href="#projects" className="btn btn-outline-light btn-lg px-4 fw-bold">Ver Proyectos</a>
                 </div>
               </div>
             </div>
@@ -159,64 +159,100 @@ function App() {
         <section id="about" className="py-5 bg-darker">
           <div className="container px-4">
             <div className="row g-5 align-items-center">
-              <div className="col-lg-5 reveal">
-                <h2 className="fw-bold mb-4 text-white section-title">Sobre Mí</h2>
+              <div className="col-lg-4 reveal">
+                <h2 className="fw-bold mb-4 text-white section-title">Capacidades Técnicas</h2>
                 <p className="lead text-primary fw-semibold mb-3">José Luis Izquierdo Echuaca</p>
-                <p className="text-secondary mb-4" style={{ fontSize: '1.05rem' }}>
-                  Mi enfoque se centra en la convergencia entre <strong>IA, Seguridad y Hardware</strong>.
-                  Desarrollo sistemas que no solo funcionan, sino que se auto-protegen y optimizan.
+                <p className="text-secondary mb-4" style={{ fontSize: '1rem' }}>
+                  Arquitecto de sistemas con enfoque en la convergencia entre <strong>IA, Seguridad y Hardware</strong>.
+                  Mi perfil combina la robustez de DevOps con la agilidad del desarrollo full-stack.
                 </p>
                 <div className="d-flex gap-4 mb-4">
                   <div className="text-center">
                     <h3 className="fw-bold text-white mb-0">14</h3>
-                    <small className="text-muted text-uppercase" style={{ fontSize: '0.65rem' }}>Sistemas Activos</small>
+                    <small className="text-muted text-uppercase" style={{ fontSize: '0.6rem' }}>Sistemas Activos</small>
                   </div>
                   <div className="vr text-secondary opacity-25"></div>
                   <div className="text-center">
                     <h3 className="fw-bold text-white mb-0">98%</h3>
-                    <small className="text-muted text-uppercase" style={{ fontSize: '0.65rem' }}>Uptime Infra</small>
+                    <small className="text-muted text-uppercase" style={{ fontSize: '0.6rem' }}>Uptime Infra</small>
                   </div>
                 </div>
               </div>
               
-              <div className="col-lg-7">
+              <div className="col-lg-8">
                 <div className="row g-4">
                   <div className="col-md-6 reveal" style={{ animationDelay: '0.2s' }}>
-                    <div className="skill-item h-100">
-                      <h6 className="fw-bold text-white mb-4"><i className="bi bi-cpu text-primary me-2"></i>DevOps & Infra</h6>
-                      <div className="skill-item-inner mb-4">
-                        <div className="d-flex justify-content-between small mb-2">
-                          <span className="text-secondary">Docker / OMV / Debian</span>
-                          <span className="text-primary fw-bold">98%</span>
+                    <div className="skill-item">
+                      <h6 className="fw-bold text-white mb-4"><i className="bi bi-cpu text-primary me-2"></i>Hardware & DevOps</h6>
+                      
+                      <div className="skill-item-inner mb-3">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>Raspberry Pi / Linux / Hardening</span>
+                          <span className="text-primary fw-bold">Experto</span>
                         </div>
                         <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '98%' }}></div></div>
                       </div>
-                      <div className="skill-item-inner">
-                        <div className="d-flex justify-content-between small mb-2">
-                          <span className="text-secondary">Hardening & Auditoría</span>
-                          <span className="text-primary fw-bold">92%</span>
+
+                      <div className="skill-item-inner mb-3">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>Docker / Portainer / NFS</span>
+                          <span className="text-primary fw-bold">Experto</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '92%' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '96%' }}></div></div>
+                      </div>
+
+                      <div className="skill-item-inner mb-3">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>Impresión & Diseño 3D</span>
+                          <span className="text-primary fw-bold">Experto</span>
+                        </div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '95%' }}></div></div>
+                      </div>
+
+                      <div className="skill-item-inner">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>WireGuard / VPN / Redes</span>
+                          <span className="text-info fw-bold">Avanzado</span>
+                        </div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '88%', background: 'linear-gradient(90deg, #0dcaf0, #00d2ff)' }}></div></div>
                       </div>
                     </div>
                   </div>
 
                   <div className="col-md-6 reveal" style={{ animationDelay: '0.4s' }}>
-                    <div className="skill-item h-100">
-                      <h6 className="fw-bold text-white mb-4"><i className="bi bi-code-slash text-primary me-2"></i>Software & IA</h6>
-                      <div className="skill-item-inner mb-4">
-                        <div className="d-flex justify-content-between small mb-2">
-                          <span className="text-secondary">Python / Gemini AI</span>
-                          <span className="text-primary fw-bold">90%</span>
+                    <div className="skill-item">
+                      <h6 className="fw-bold text-white mb-4"><i className="bi bi-code-slash text-primary me-2"></i>Software & Desarrollo</h6>
+                      
+                      <div className="skill-item-inner mb-3">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>Python (Flask / IA Gemini)</span>
+                          <span className="text-info fw-bold">Avanzado</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '90%' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '90%', background: 'linear-gradient(90deg, #0dcaf0, #00d2ff)' }}></div></div>
                       </div>
-                      <div className="skill-item-inner">
-                        <div className="d-flex justify-content-between small mb-2">
-                          <span className="text-secondary">React / JS / Tailwind</span>
-                          <span className="text-primary fw-bold">75%</span>
+
+                      <div className="skill-item-inner mb-3">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>PowerShell / Bash Scripting</span>
+                          <span className="text-info fw-bold">Avanzado</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '75%' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '92%', background: 'linear-gradient(90deg, #0dcaf0, #00d2ff)' }}></div></div>
+                      </div>
+
+                      <div className="skill-item-inner mb-3">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>Ciberseguridad (FIM / Suricata)</span>
+                          <span className="text-info fw-bold">Avanzado</span>
+                        </div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%', background: 'linear-gradient(90deg, #0dcaf0, #00d2ff)' }}></div></div>
+                      </div>
+
+                      <div className="skill-item-inner">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>React / JS / CSS</span>
+                          <span className="text-secondary fw-bold">Intermedio</span>
+                        </div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '75%', background: 'linear-gradient(90deg, #6c757d, #adb5bd)' }}></div></div>
                       </div>
                     </div>
                   </div>
@@ -237,7 +273,7 @@ function App() {
             </div>
 
             {projectCategories.map((category, catIndex) => (
-              <div key={catIndex} className="mb-5 reveal" style={{ animationDelay: `${catIndex * 0.2}s` }}>
+              <div key={catIndex} className="mb-5 reveal" style={{ animationDelay: `${catIndex * 0.15}s` }}>
                 <div className="d-flex align-items-center mb-4">
                   <div className="category-icon-wrapper me-3">
                     <i className={`bi ${category.icon} text-primary`}></i>
@@ -268,14 +304,20 @@ function App() {
         <section id="contact" className="py-5 bg-darker border-top border-secondary border-opacity-10">
           <div className="container px-4">
             <div className="row justify-content-center">
-              <div className="col-lg-6 text-center reveal">
-                <h2 className="fw-bold text-white mb-4 section-title">Conectemos</h2>
+              <div className="col-lg-7 text-center reveal">
+                <h2 className="fw-bold text-white mb-4 section-title">¿Necesitas una App a Medida?</h2>
                 <p className="lead text-secondary mb-5">
-                  Disponible para consultoría en infraestructura, integraciones de IA y desarrollo de sistemas críticos.
+                  Especializado en el desarrollo de aplicaciones personalizadas, automatización con IA e infraestructuras seguras. 
+                  Cuéntame tu idea y la haremos realidad.
                 </p>
-                <a href="mailto:jluisie24@gmail.com" className="btn btn-primary btn-lg px-5 fw-bold shadow-neon contact-btn">
-                  <i className="bi bi-envelope me-2"></i>Iniciar Conversación
-                </a>
+                <div className="d-flex flex-wrap gap-3 justify-content-center">
+                  <a href="mailto:jluisie24@gmail.com" className="btn btn-primary btn-lg px-5 fw-bold shadow-neon contact-btn">
+                    <i className="bi bi-rocket-takeoff me-2"></i>Contratar Desarrollo
+                  </a>
+                  <a href="#projects" className="btn btn-outline-light btn-lg px-4 fw-bold">
+                    Ver Portafolio
+                  </a>
+                </div>
               </div>
             </div>
           </div>
