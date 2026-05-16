@@ -62,13 +62,13 @@ body {
 
 /* Hero Section */
 .hero-section {
-  min-height: 85vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   position: relative;
   background: radial-gradient(circle at 80% 20%, rgba(0, 210, 255, 0.15), transparent 40%),
               radial-gradient(circle at 20% 80%, rgba(58, 123, 213, 0.1), transparent 40%) !important;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .hero-title {
@@ -291,12 +291,12 @@ body {
 
 /* Responsive */
 @media (max-width: 992px) {
-  .hero-section { padding: 60px 0; text-align: center; }
+  .hero-section { min-height: auto; padding: 40px 0; text-align: center; }
   .hero-title { font-size: 3.5rem; }
 }
 
 @media (max-width: 768px) {
   .hero-title { font-size: 2.8rem; }
-  .hero-section { min-height: 70vh; }
-  section { padding: 60px 0; }
+  .hero-section { min-height: auto; padding: 30px 0; }
+  section { padding: 50px 0; }
 }
