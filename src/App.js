@@ -113,90 +113,86 @@ function App() {
       <Header />
       
       <main>
-        {/* Section: Skills & Technical Levels */}
-        <section id="about" className="py-5">
+        {/* Section: Hero */}
+        <section className="hero-section text-center text-lg-start">
           <div className="container px-4">
-            <div className="row g-5">
+            <div className="row align-items-center">
+              <div className="col-lg-8 reveal">
+                <div className="status-badge">
+                  <span className="dot"></span> INFRAESTRUCTURA v18.9.5 ONLINE
+                </div>
+                <span className="hero-subtitle">FULL STACK DEVELOPER & DEVOPS</span>
+                <h1>Construyendo el futuro de la gestión operativa</h1>
+                <p className="lead text-muted mb-5" style={{ maxWidth: '600px' }}>
+                  Especialista en arquitecturas distribuidas de alta disponibilidad, 
+                  automatización mediante IA y seguridad defensiva avanzada. 
+                  Administrador del ecosistema privado Rambo-Raspi.
+                </p>
+                <div className="d-flex gap-3 justify-content-center justify-content-lg-start">
+                  <a href="#projects" className="btn btn-primary btn-lg px-4 fw-bold shadow-neon">Ver Proyectos</a>
+                  <a href="#about" className="btn btn-outline-light btn-lg px-4 fw-bold">Sobre Mí</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Skills & Technical Levels */}
+        <section id="about" className="py-5 bg-darker">
+          <div className="container px-4">
+            <div className="row g-5 align-items-center">
               <div className="col-lg-5 reveal">
-                <h2 className="fw-bold mb-4">Sobre Mí</h2>
-                <p className="lead text-dark">
-                  Soy José Luis Izquierdo Echuaca, técnico y desarrollador autodidacta con pasión por la tecnología y la ciberseguridad. 
-                  Administro mi propia infraestructura de servidores de alta disponibilidad: 
-                  <strong>Rambo</strong> (NAS/Seguridad) y <strong>Raspi</strong> (App Server). 
+                <h2 className="fw-bold mb-4 text-white">Sobre Mí</h2>
+                <p className="lead text-secondary">
+                  Mi nombre es José Luis Izquierdo Echuaca. Mi enfoque se centra en la 
+                  <strong> convergencia entre IA, Seguridad y Hardware</strong>.
                 </p>
                 <p className="text-muted">
-                  Especialista en "Hardening" de sistemas Linux, despliegue de microservicios con Docker y desarrollo de soluciones 
-                  basadas en IA (Gemini API) y Python. Mi enfoque combina la robustez del hardware con la agilidad del software moderno.
+                  He transformado mi infraestructura personal en un laboratorio de alta tecnología 
+                  donde desarrollo soluciones que optimizan procesos reales, desde la gestión de 
+                  conductores hasta la monitorización espectral.
                 </p>
-                <div className="mt-4">
-                  <a href="#contact" className="btn btn-outline-primary px-4 fw-bold">Contactar</a>
-                </div>
               </div>
               
               <div className="col-lg-7">
-                <h2 className="fw-bold mb-4 text-center text-lg-start">Capacidades Técnicas</h2>
-                <div className="row">
-                  <div className="col-md-6 reveal">
-                    <h5 className="fw-bold mb-3 mt-2"><i className="bi bi-cpu me-2"></i>Hardware & DevOps</h5>
+                <div className="row g-4">
+                  <div className="col-md-6 reveal" style={{ animationDelay: '0.2s' }}>
                     <div className="skill-item">
-                      <div className="d-flex justify-content-between">
-                        <span>Raspberry Pi / Linux / Hardening</span>
-                        <span className="fw-bold text-primary">Experto</span>
+                      <h6 className="fw-bold text-white mb-3"><i className="bi bi-cpu text-primary me-2"></i>DevOps & Infra</h6>
+                      <div className="skill-item-inner mb-3">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>Docker / OMV / Linux</span>
+                          <span className="text-primary">98%</span>
+                        </div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '98%' }}></div></div>
                       </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '98%' }}></div></div>
-                    </div>
-                    <div className="skill-item">
-                      <div className="d-flex justify-content-between">
-                        <span>Docker / Portainer / NFS</span>
-                        <span className="fw-bold text-primary">Experto</span>
+                      <div className="skill-item-inner">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>Hardening / Seguridad</span>
+                          <span className="text-primary">92%</span>
+                        </div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '92%' }}></div></div>
                       </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '92%' }}></div></div>
-                    </div>
-                    <div className="skill-item">
-                      <div className="d-flex justify-content-between">
-                        <span>Impresión & Diseño 3D</span>
-                        <span className="fw-bold text-primary">Experto</span>
-                      </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '90%' }}></div></div>
-                    </div>
-                    <div className="skill-item">
-                      <div className="d-flex justify-content-between">
-                        <span>WireGuard / VPN / Redes</span>
-                        <span className="fw-bold text-primary">Avanzado</span>
-                      </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%' }}></div></div>
                     </div>
                   </div>
-                  
-                  <div className="col-md-6 reveal">
-                    <h5 className="fw-bold mb-3 mt-2"><i className="bi bi-code-slash me-2"></i>Software & Desarrollo</h5>
+
+                  <div className="col-md-6 reveal" style={{ animationDelay: '0.4s' }}>
                     <div className="skill-item">
-                      <div className="d-flex justify-content-between">
-                        <span>Python (Flask / IA Gemini)</span>
-                        <span className="fw-bold text-primary">Avanzado</span>
+                      <h6 className="fw-bold text-white mb-3"><i className="bi bi-code-slash text-primary me-2"></i>Software & IA</h6>
+                      <div className="skill-item-inner mb-3">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>Python / Gemini API</span>
+                          <span className="text-primary">90%</span>
+                        </div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '90%' }}></div></div>
                       </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '90%' }}></div></div>
-                    </div>
-                    <div className="skill-item">
-                      <div className="d-flex justify-content-between">
-                        <span>PowerShell / Bash Scripting</span>
-                        <span className="fw-bold text-primary">Avanzado</span>
+                      <div className="skill-item-inner">
+                        <div className="d-flex justify-content-between small mb-1">
+                          <span>React / JS / Tailwind</span>
+                          <span className="text-primary">75%</span>
+                        </div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '75%' }}></div></div>
                       </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '85%' }}></div></div>
-                    </div>
-                    <div className="skill-item">
-                      <div className="d-flex justify-content-between">
-                        <span>React / JS / CSS</span>
-                        <span className="fw-bold text-primary">Intermedio</span>
-                      </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '65%' }}></div></div>
-                    </div>
-                    <div className="skill-item">
-                      <div className="d-flex justify-content-between">
-                        <span>Ciberseguridad (FIM / Suricata)</span>
-                        <span className="fw-bold text-primary">Avanzado</span>
-                      </div>
-                      <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '80%' }}></div></div>
                     </div>
                   </div>
                 </div>
@@ -208,22 +204,25 @@ function App() {
         {/* Section: Projects */}
         <section id="projects" className="py-5">
           <div className="container px-4">
-            <h2 className="fw-bold text-center mb-3">Mis Proyectos</h2>
-            <p className="text-center text-muted mb-5">
-              Todos mis proyectos corren en mis servidores privados (Raspi y Rambo) y son accesibles a través de mi VPN WireGuard. 
-              TurnoControlPro y TurnosPro están alojados localmente y no son accesibles desde el exterior.
-            </p>
+            <div className="text-center mb-5 reveal">
+              <h2 className="fw-bold text-white mb-3">Portafolio de Ingeniería</h2>
+              <p className="text-muted mx-auto" style={{ maxWidth: '700px' }}>
+                Una selección de sistemas desplegados en mi infraestructura privada. 
+                Cada proyecto representa un reto superado en automatización, seguridad o visualización de datos.
+              </p>
+            </div>
             <div className="row g-4">
               {projects.map((project, index) => (
-                <ProjectCard
-                  key={index}
-                  title={project.title}
-                  description={project.description}
-                  link={project.link}
-                  image={project.image}
-                  overlayText={project.overlayText}
-                  objectFit={project.objectFit}
-                />
+                <div key={index} className="col-lg-4 col-md-6 reveal" style={{ animationDelay: `${(index * 0.1) + 0.5}s` }}>
+                  <ProjectCard
+                    title={project.title}
+                    description={project.description}
+                    link={project.link}
+                    image={project.image}
+                    overlayText={project.overlayText}
+                    objectFit={project.objectFit}
+                  />
+                </div>
               ))}
             </div>
           </div>
