@@ -12,7 +12,6 @@ import specraImg from './assets/containers/specra_trace.png';
 import esp32Img from './assets/containers/esp32.png';
 import gastiumIaImg from './assets/containers/gastium_ia_v1250_mockup.png';
 import tinkercadImg from './assets/containers/tinkercad.png';
-import stariaEscobaImg from './assets/containers/staria_escoba_icon.png';
 import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 import turnoControlImg from './assets/containers/turno_control_icon.png';
 import alexaImg from './assets/containers/alexa.svg';
@@ -76,9 +75,9 @@ function App() {
         },
         {
           title: 'Movimientos Drivers Comercial',
-          description: 'Gestión comercial y logística de flotas. Integración nativa con WhatsApp y reportes automáticos.',
+          description: 'Plataforma especializada para la gestión comercial y logística de flotas de conductores. Integración con WhatsApp y reportes automáticos.',
           link: '#',
-          image: stariaEscobaImg
+          image: turnoControlImg
         }
       ]
     },
