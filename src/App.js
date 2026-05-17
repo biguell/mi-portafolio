@@ -78,6 +78,13 @@ function App() {
           description: 'Plataforma especializada para la gestión comercial y logística de flotas de conductores. Integración con WhatsApp y reportes automáticos.',
           link: '#',
           image: turnoControlImg
+        },
+        {
+          title: 'Escoba Drivers',
+          version: 'v16.0',
+          description: 'Versión ágil (PWA) de gestión de turnos con el algoritmo de "Justicia Histórica", persistencia total y optimización extrema para dispositivos móviles iPhone/iOS.',
+          link: '#',
+          image: turnoControlImg
         }
       ]
     },
