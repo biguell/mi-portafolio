@@ -293,9 +293,9 @@ function App() {
                       <div className="skill-item-inner">
                         <div className="d-flex justify-content-between small mb-1">
                           <span>React / JS / CSS</span>
-                          <span style={{ color: '#d946ef' }} className="fw-bold">Intermedio</span>
+                          <span style={{ color: '#00d2ff' }} className="fw-bold">Avanzado</span>
                         </div>
-                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '75%', background: 'linear-gradient(90deg, #d946ef, #8b5cf6)' }}></div></div>
+                        <div className="skill-bar-container"><div className="skill-bar-fill" style={{ width: '94%', background: 'linear-gradient(90deg, #00d2ff, #3a7bd5)' }}></div></div>
                       </div>
                     </div>
                   </div>
