@@ -7,7 +7,6 @@ import './App.css';
 import homeAssistantImg from './assets/containers/home_assistant.svg';
 import plexImg from './assets/containers/plex.svg';
 import openmediavaultLogo from './assets/containers/openmediavault.svg';
-import ramboDashImg from './assets/containers/rambo_dashboard.png';
 import raspiDashImg from './assets/containers/raspi_dashboard.png';
 import specraImg from './assets/containers/specra_trace.png';
 import esp32Img from './assets/containers/esp32.png';
@@ -16,7 +15,6 @@ import tinkercadImg from './assets/containers/tinkercad.png';
 import turnosProImg from './assets/containers/turnospro_icon.png';
 import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 import turnoControlImg from './assets/containers/turno_control_icon.png';
-import stariaEscobaImg from './assets/containers/staria_escoba_icon.png';
 import alexaImg from './assets/containers/alexa.svg';
 
 function App() {
@@ -75,12 +73,6 @@ function App() {
           description: 'Asistente de gastos con Gemini. Lectura de tickets mediante OCR, clasificación dinámica y optimización de presupuestos.',
           link: '#',
           image: gastiumIaImg
-        },
-        {
-          title: 'Escoba Drivers (PWA)',
-          description: 'Gestión de turnos con algoritmo de "Justicia Histórica". Optimización extrema para iPhone/iOS.',
-          link: '#',
-          image: stariaEscobaImg
         },
         {
           title: 'Movimientos Drivers Comercial',
