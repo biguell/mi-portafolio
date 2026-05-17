@@ -22,7 +22,7 @@ const DevopsTerminal = () => {
     const cmd = input.trim().toLowerCase();
     if (!cmd) return;
 
-    const newHistory = [...history, { type: 'input', text: `yoeph@biguell-hub:~$ ${input}` }];
+    const newHistory = [...history, { type: 'input', text: `guest@biguell-hub:~$ ${input}` }];
 
     switch (cmd) {
       case 'help':
@@ -38,19 +38,19 @@ const DevopsTerminal = () => {
       case 'status':
         newHistory.push(
           { type: 'output', text: '● HOST: Rambo (NAS & Core Services)' },
-          { type: 'output', text: '  IP: 192.168.2.35  |  OS: Debian 12 (OMV 7)  |  STATUS: ONLINE' },
+          { type: 'output', text: '  IP: 10.x.x.35     |  OS: Debian 12 (OMV 7)  |  STATUS: ONLINE' },
           { type: 'output', text: '  SERVICES: SSH [OK] BorgBackup [OK] fail2ban [OK] AIDE [OK]' },
           { type: 'output', text: '  CONTAINERS: Portainer, WireGuard, DuckDNS, Nginx Proxy Manager' },
           { type: 'output', text: '● HOST: Raspi (Application Server)' },
-          { type: 'output', text: '  IP: 192.168.2.16  |  OS: PiOS Lite 64bit    |  STATUS: ONLINE' },
+          { type: 'output', text: '  IP: 10.x.x.16     |  OS: PiOS Lite 64bit    |  STATUS: ONLINE' },
           { type: 'output', text: '  SERVICES: SSH [OK] fail2ban [OK] BorgClient [OK] SMB/CIFS [OK]' },
           { type: 'output', text: '  CONTAINERS: Home Assistant, Plex, ownCloud' },
-          { type: 'output', text: '● NETWORK: WireGuard VPN tunnel active | 10.192.1.0/24' }
+          { type: 'output', text: '● NETWORK: WireGuard VPN tunnel active | 10.x.x.x/24' }
         );
         break;
       case 'neofetch':
         newHistory.push(
-          { type: 'output', text: '       .---.        yoeph@biguell-hub' },
+          { type: 'output', text: '       .---.        guest@biguell-hub' },
           { type: 'output', text: '      /     \\       -----------------' },
           { type: 'output', text: '      \\     /       OS: Biguell Hub OS v18.9.5' },
           { type: 'output', text: '       `---`        Kernel: Linux 6.1.0-rpi-devops' },
@@ -98,7 +98,7 @@ const DevopsTerminal = () => {
           <span className="rounded-circle" style={{ width: '12px', height: '12px', background: '#27c93f' }}></span>
         </div>
         <div className="text-secondary small fw-semibold" style={{ fontSize: '0.75rem', letterSpacing: '0.5px' }}>
-          bash - yoeph@biguell-hub:~
+          bash - guest@biguell-hub:~
         </div>
         <div className="d-flex align-items-center fw-bold" style={{ fontSize: '0.65rem', color: '#00ff88', fontFamily: 'monospace', letterSpacing: '0.5px', background: 'rgba(0, 255, 136, 0.05)', border: '1px solid rgba(0, 255, 136, 0.15)', padding: '2px 8px', borderRadius: '4px' }}>
           SECURE SANDBOX
@@ -123,7 +123,7 @@ const DevopsTerminal = () => {
 
       {/* Input row */}
       <form onSubmit={handleCommand} className="d-flex align-items-center px-3 py-2" style={{ background: '#030508', borderTop: '1px solid rgba(255, 255, 255, 0.03)' }}>
-        <span className="text-primary me-2" style={{ fontFamily: 'monospace', fontSize: '0.85rem' }}>yoeph@biguell-hub:~$</span>
+        <span className="text-primary me-2" style={{ fontFamily: 'monospace', fontSize: '0.85rem' }}>guest@biguell-hub:~$</span>
         <input
           type="text"
           value={input}
