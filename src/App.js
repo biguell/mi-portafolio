@@ -126,7 +126,7 @@ function App() {
           image: homeAssistantImg
         },
         {
-          title: 'Spectrode señales (Análisis Espectral)',
+          title: 'Spectrol señales (Análisis Espectral)',
           description: 'Herramienta de análisis forense y visualización de trazas espectrales para patrones complejos.',
           link: '#',
           image: specraImg

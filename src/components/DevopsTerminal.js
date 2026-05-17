@@ -69,7 +69,7 @@ const DevopsTerminal = () => {
           { type: 'output', text: '► Escoba Drivers [v16.0]         - PWA para gestión de turnos.' },
           { type: 'output', text: '► Alexa + Gemini [Asistente IA]   - Backend AWS Lambda en voz natural.' },
           { type: 'output', text: '► Gastium IA [Finanzas]          - Control de gastos con Gemini OCR.' },
-          { type: 'output', text: '► Spectrode señales [Análisis 3D] - Visualización de trazas espectrales.' }
+          { type: 'output', text: '► Spectrol señales [Análisis 3D] - Visualización de trazas espectrales.' }
         );
         break;
       case 'clear':
