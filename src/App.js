@@ -137,8 +137,8 @@ function App() {
           <div className="container px-4">
             <div className="row align-items-center">
               <div className="col-lg-8 reveal">
-                <div className="status-badge">
-                  <span className="dot"></span> SISTEMAS v18.9.5 ONLINE
+                <div className="status-badge" style={{ background: 'rgba(0, 255, 136, 0.06)', borderColor: 'rgba(0, 255, 136, 0.15)', color: '#00ff88' }}>
+                  <span className="dot" style={{ background: '#00ff88', boxShadow: '0 0 8px #00ff88' }}></span> DISPONIBLE PARA PROYECTOS
                 </div>
                 <span className="hero-subtitle">FULL STACK DEVELOPER & DEVOPS</span>
                 <h1 className="hero-title">Arquitecturas que definen el rendimiento</h1>
