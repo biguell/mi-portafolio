@@ -1,15 +1,13 @@
 {
   "files": {
     "main.css": "./static/css/main.74e5c943.css",
-    "main.js": "./static/js/main.4b68a6b0.js",
+    "main.js": "./static/js/main.15b7fc77.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
     "static/media/tinkercad.png": "./static/media/tinkercad.85654c2f4ca8b730b92c.png",
-    "static/media/staria_escoba_icon.png": "./static/media/staria_escoba_icon.c25badd0433b751b6aac.png",
     "static/media/turno_control_icon.png": "./static/media/turno_control_icon.7c374ee1b49e8914d1db.png",
     "static/media/turnospro_icon.png": "./static/media/turnospro_icon.f8cb7f42d11940c9ac46.png",
     "static/media/specra_trace.png": "./static/media/specra_trace.ceea93685ae46a6cfd13.png",
     "static/media/raspi_dashboard.png": "./static/media/raspi_dashboard.a78a1bff0ac9fc15ae46.png",
-    "static/media/rambo_dashboard.png": "./static/media/rambo_dashboard.270eef88f69c718a012f.png",
     "static/media/esp32.png": "./static/media/esp32.a416cf9acda7020bd717.png",
     "static/media/gastium_ia_v1250_mockup.png": "./static/media/gastium_ia_v1250_mockup.0eb8f396950a0f046c4b.png",
     "static/media/nextcloud_logo.png": "./static/media/nextcloud_logo.05a7808b9a6a427bbd79.png",
@@ -19,11 +17,11 @@
     "static/media/alexa.svg": "./static/media/alexa.e1cbbf0b451b648743627bd93c6160ae.svg",
     "static/media/plex.svg": "./static/media/plex.0603777cd9e30641a4d4b67c086446a2.svg",
     "main.74e5c943.css.map": "./static/css/main.74e5c943.css.map",
-    "main.4b68a6b0.js.map": "./static/js/main.4b68a6b0.js.map",
+    "main.15b7fc77.js.map": "./static/js/main.15b7fc77.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74e5c943.css",
-    "static/js/main.4b68a6b0.js"
+    "static/js/main.15b7fc77.js"
   ]
 }
