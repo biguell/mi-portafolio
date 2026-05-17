@@ -4,8 +4,9 @@ import Footer from './components/Footer';
 import ProjectCard from './components/ProjectCard';
 import './App.css';
 
-import homeAssistantImg from './assets/containers/home_assistant.png';
+import homeAssistantImg from './assets/containers/home_assistant.svg';
 import plexImg from './assets/containers/plex.svg';
+import openmediavaultLogo from './assets/containers/openmediavault.svg';
 import ramboDashImg from './assets/containers/rambo_dashboard.png';
 import raspiDashImg from './assets/containers/raspi_dashboard.png';
 import specraImg from './assets/containers/specra_trace.png';
@@ -29,7 +30,7 @@ function App() {
           version: 'v18.9.5',
           description: 'Ecosistema de monitorización unificado con arquitectura "Neon-Motion". Incluye protocolo Synergy con IA Auto-Healer para autoreparación de servicios.',
           link: '#',
-          image: ramboDashImg
+          image: openmediavaultLogo
         },
         {
           title: 'Servidor de Aplicaciones (Raspi)',
@@ -40,9 +41,10 @@ function App() {
         },
         {
           title: 'Rambo NAS: Hardening Avanzado',
+          version: 'v18.9.5',
           description: 'Servidor central con OMV 7. Seguridad multicapa con Fail2ban, rkhunter y AIDE para detección de intrusiones.',
           link: '#',
-          image: ramboDashImg
+          image: openmediavaultLogo
         },
         {
           title: 'Nube Privada Nextcloud',
