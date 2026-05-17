@@ -17,6 +17,7 @@ import turnoControlImg from './assets/containers/turno_control_icon.png';
 import alexaImg from './assets/containers/alexa.svg';
 import stariaImg from './assets/containers/staria_escoba_icon.png';
 import ramboDashImg from './assets/containers/rambo_dashboard.png';
+import ramboEngineImg from './assets/containers/rambo_engine.png';
 
 function App() {
   const projectCategories = [
@@ -29,7 +30,7 @@ function App() {
           version: 'v18.9.5',
           description: 'Ecosistema de monitorización unificado con arquitectura "Neon-Motion". Incluye protocolo Synergy con IA Auto-Healer para autoreparación de servicios.',
           link: '#',
-          image: openmediavaultLogo
+          image: ramboEngineImg
         },
         {
           title: 'Servidor de Aplicaciones (Raspi)',
