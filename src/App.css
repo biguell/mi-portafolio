@@ -290,6 +290,12 @@ body {
 }
 
 /* Responsive */
+@media (min-width: 992px) {
+  .hero-title {
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 992px) {
   .hero-section { min-height: auto; padding: 40px 0; text-align: center; }
   .hero-title { font-size: 2.4rem; }

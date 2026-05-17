@@ -132,14 +132,14 @@ function App() {
         <section id="hero" className="hero-section text-center text-lg-start">
           <div className="container px-4">
             <div className="row align-items-center">
-              <div className="col-lg-8 reveal">
+              <div className="col-lg-12 reveal">
                 <div className="status-badge" style={{ background: 'rgba(0, 255, 136, 0.06)', borderColor: 'rgba(0, 255, 136, 0.15)', color: '#00ff88' }}>
                   <span className="dot" style={{ background: '#00ff88', boxShadow: '0 0 8px #00ff88' }}></span> DISPONIBLE PARA PROYECTOS
                 </div>
                 <span className="hero-subtitle">FULL STACK DEVELOPER & DEVOPS</span>
                 <h1 className="hero-title">Arquitecturas que definen el rendimiento</h1>
-                <p className="lead text-secondary mb-5" style={{ maxWidth: '600px', fontSize: '1.1rem' }}>
-                  Especialista en infraestructuras distribuidas, 
+                <p className="lead text-secondary mb-5" style={{ maxWidth: '720px', fontSize: '1.1rem' }}>
+                  Especialista en infraestructuras distribuidas, analista de redes y servidores, 
                   automatización con IA y seguridad defensiva. 
                   Transformando complejidad técnica en soluciones operativas.
                 </p>
