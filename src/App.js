@@ -5,7 +5,7 @@ import ProjectCard from './components/ProjectCard';
 import './App.css';
 
 import homeAssistantImg from './assets/containers/home_assistant.png';
-import plexImg from './assets/containers/plex.png';
+import plexImg from './assets/containers/plex.svg';
 import ramboDashImg from './assets/containers/rambo_dashboard.png';
 import raspiDashImg from './assets/containers/raspi_dashboard.png';
 import specraImg from './assets/containers/specra_trace.png';
