@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.81618ac1.css",
-    "main.js": "./static/js/main.a31447d6.js",
+    "main.js": "./static/js/main.d056db02.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
     "static/media/tinkercad.png": "./static/media/tinkercad.85654c2f4ca8b730b92c.png",
-    "static/media/plex.png": "./static/media/plex.1d83884fbbcf6cde1ffe.png",
     "static/media/staria_escoba_icon.png": "./static/media/staria_escoba_icon.c25badd0433b751b6aac.png",
     "static/media/turno_control_icon.png": "./static/media/turno_control_icon.7c374ee1b49e8914d1db.png",
     "static/media/turnospro_icon.png": "./static/media/turnospro_icon.f8cb7f42d11940c9ac46.png",
@@ -17,12 +16,13 @@
     "static/media/nextcloud_logo.png": "./static/media/nextcloud_logo.05a7808b9a6a427bbd79.png",
     "index.html": "./index.html",
     "static/media/alexa.svg": "./static/media/alexa.e1cbbf0b451b648743627bd93c6160ae.svg",
+    "static/media/plex.svg": "./static/media/plex.851281cd22180f4fd44cde18faf09ffe.svg",
     "main.81618ac1.css.map": "./static/css/main.81618ac1.css.map",
-    "main.a31447d6.js.map": "./static/js/main.a31447d6.js.map",
+    "main.d056db02.js.map": "./static/js/main.d056db02.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81618ac1.css",
-    "static/js/main.a31447d6.js"
+    "static/js/main.d056db02.js"
   ]
 }

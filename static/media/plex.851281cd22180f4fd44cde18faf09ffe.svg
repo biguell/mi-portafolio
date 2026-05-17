@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="240" height="240">
+  <defs>
+    <linearGradient id="plexChevronGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBAF00" />
+      <stop offset="100%" stop-color="#FF8C00" />
+    </linearGradient>
+  </defs>
+  <!-- Highly accurate official Plex double-chevron path in premium golden-amber neon -->
+  <path fill="url(#plexChevronGrad)" d="M2.14 0l16.14 12-16.14 12 3.73-12-3.73-12zm7.72 0l16.14 12-16.14 12 3.73-12-3.73-12z" />
+</svg>
