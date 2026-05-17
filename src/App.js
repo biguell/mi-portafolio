@@ -15,6 +15,7 @@ import tinkercadImg from './assets/containers/tinkercad.png';
 import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 import turnoControlImg from './assets/containers/turno_control_icon.png';
 import alexaImg from './assets/containers/alexa.svg';
+import stariaImg from './assets/containers/staria_escoba_icon.png';
 
 function App() {
   const projectCategories = [
@@ -84,7 +85,7 @@ function App() {
           version: 'v16.0',
           description: 'Versión ágil (PWA) de gestión de turnos con el algoritmo de "Justicia Histórica", persistencia total y optimización extrema para dispositivos móviles iPhone/iOS.',
           link: '#',
-          image: turnoControlImg
+          image: stariaImg
         }
       ]
     },
