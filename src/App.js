@@ -16,6 +16,7 @@ import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 import turnoControlImg from './assets/containers/turno_control_icon.png';
 import alexaImg from './assets/containers/alexa.svg';
 import stariaImg from './assets/containers/staria_escoba_icon.png';
+import ramboDashImg from './assets/containers/rambo_dashboard.png';
 
 function App() {
   const projectCategories = [
@@ -38,11 +39,11 @@ function App() {
           image: raspiDashImg
         },
         {
-          title: 'Rambo NAS: Hardening Avanzado',
+          title: 'Infraestructura Segura (Rambo NAS)',
           version: 'v18.9.5',
-          description: 'Servidor central con OMV 7. Seguridad multicapa con Fail2ban, rkhunter y AIDE para detección de intrusiones.',
+          description: 'Servidor central (192.168.2.35) con OMV 7. "Hardening" avanzado (Lynis 80+), seguridad multicapa con Fail2ban, AIDE y BorgBackup cifrado.',
           link: '#',
-          image: openmediavaultLogo
+          image: ramboDashImg
         },
         {
           title: 'Nube Privada Nextcloud',
