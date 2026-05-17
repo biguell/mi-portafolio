@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.0fdeff8c.css",
-    "main.js": "./static/js/main.b869c049.js",
+    "main.js": "./static/js/main.cbdef7de.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
     "static/media/tinkercad.png": "./static/media/tinkercad.85654c2f4ca8b730b92c.png",
     "static/media/staria_escoba_icon.png": "./static/media/staria_escoba_icon.c25badd0433b751b6aac.png",
@@ -17,11 +17,11 @@
     "static/media/alexa.svg": "./static/media/alexa.e1cbbf0b451b648743627bd93c6160ae.svg",
     "static/media/plex.svg": "./static/media/plex.0603777cd9e30641a4d4b67c086446a2.svg",
     "main.0fdeff8c.css.map": "./static/css/main.0fdeff8c.css.map",
-    "main.b869c049.js.map": "./static/js/main.b869c049.js.map",
+    "main.cbdef7de.js.map": "./static/js/main.cbdef7de.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fdeff8c.css",
-    "static/js/main.b869c049.js"
+    "static/js/main.cbdef7de.js"
   ]
 }
