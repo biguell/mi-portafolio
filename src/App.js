@@ -347,9 +347,9 @@ function App() {
         <section id="terminal" className="py-5 bg-black border-top border-secondary border-opacity-10">
           <div className="container px-4">
             <div className="text-center mb-4 reveal">
-              <h2 className="fw-bold text-white mb-3 section-title">Consola Interactiva DevOps</h2>
+              <h2 className="fw-bold text-white mb-3 section-title">Consola DevOps Interactiva (Frontend Sandbox)</h2>
               <p className="text-secondary mx-auto" style={{ maxWidth: '700px' }}>
-                Interactúa con mi clúster local a través de esta terminal simulada. Escribe comandos y presiona Enter.
+                Explora el clúster local a través de este entorno simulado y aislado. Ejecución segura en el lado del cliente (sin acceso de red a los servidores físicos).
               </p>
             </div>
             <div className="row justify-content-center reveal">

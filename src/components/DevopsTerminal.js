@@ -100,7 +100,9 @@ const DevopsTerminal = () => {
         <div className="text-secondary small fw-semibold" style={{ fontSize: '0.75rem', letterSpacing: '0.5px' }}>
           bash - yoeph@biguell-hub:~
         </div>
-        <div style={{ width: '40px' }}></div>
+        <div className="d-flex align-items-center fw-bold" style={{ fontSize: '0.65rem', color: '#00ff88', fontFamily: 'monospace', letterSpacing: '0.5px', background: 'rgba(0, 255, 136, 0.05)', border: '1px solid rgba(0, 255, 136, 0.15)', padding: '2px 8px', borderRadius: '4px' }}>
+          SECURE SANDBOX
+        </div>
       </div>
 
       {/* Terminal body */}
