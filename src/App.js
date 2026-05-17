@@ -18,8 +18,30 @@ import alexaImg from './assets/containers/alexa.svg';
 import stariaImg from './assets/containers/staria_escoba_icon.png';
 import ramboDashImg from './assets/containers/rambo_dashboard.png';
 import ramboEngineImg from './assets/containers/rambo_engine.png';
+import DevopsTerminal from './components/DevopsTerminal';
 
 function App() {
+  const [telemetry, setTelemetry] = React.useState({
+    ping: 12,
+    ramboCpu: 4.2,
+    ramboTemp: 33.6,
+    raspiCpu: 2.1,
+    raspiTemp: 38.5
+  });
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setTelemetry({
+        ping: Math.floor(Math.random() * (15 - 10 + 1)) + 10,
+        ramboCpu: parseFloat((Math.random() * (12 - 3) + 3).toFixed(1)),
+        ramboTemp: parseFloat((Math.random() * (34.5 - 33.1) + 33.1).toFixed(1)),
+        raspiCpu: parseFloat((Math.random() * (8 - 1.5) + 1.5).toFixed(1)),
+        raspiTemp: parseFloat((Math.random() * (39.5 - 38.0) + 38.0).toFixed(1))
+      });
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   const projectCategories = [
     {
       name: 'Infraestructura & Seguridad',
@@ -135,8 +157,16 @@ function App() {
           <div className="container px-4">
             <div className="row align-items-center">
               <div className="col-lg-12 reveal">
-                <div className="status-badge" style={{ background: 'rgba(0, 255, 136, 0.06)', borderColor: 'rgba(0, 255, 136, 0.15)', color: '#00ff88' }}>
-                  <span className="dot" style={{ background: '#00ff88', boxShadow: '0 0 8px #00ff88' }}></span> DISPONIBLE PARA PROYECTOS
+                <div className="d-flex flex-wrap gap-2 mb-3 justify-content-center justify-content-lg-start align-items-center">
+                  <div className="status-badge" style={{ background: 'rgba(0, 255, 136, 0.06)', borderColor: 'rgba(0, 255, 136, 0.15)', color: '#00ff88', margin: 0 }}>
+                    <span className="dot" style={{ background: '#00ff88', boxShadow: '0 0 8px #00ff88' }}></span> DISPONIBLE PARA PROYECTOS
+                  </div>
+                  <div className="telemetry-badge" style={{ background: 'rgba(0, 210, 255, 0.04)', border: '1px solid rgba(0, 210, 255, 0.12)', padding: '6px 14px', borderRadius: '100px', fontSize: '0.78rem', color: '#00d2ff', fontFamily: 'monospace', display: 'flex', gap: '15px' }}>
+                    <span>PING: {telemetry.ping}ms</span>
+                    <span>RAMBO CPU: {telemetry.ramboCpu}%</span>
+                    <span>TEMP: {telemetry.ramboTemp}°C</span>
+                    <span>RASPI CPU: {telemetry.raspiCpu}%</span>
+                  </div>
                 </div>
                 <span className="hero-subtitle">FULL STACK DEVELOPER & DEVOPS</span>
                 <h1 className="hero-title">Arquitecturas que definen el rendimiento</h1>
@@ -310,6 +340,23 @@ function App() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Section: DevOps Terminal */}
+        <section id="terminal" className="py-5 bg-black border-top border-secondary border-opacity-10">
+          <div className="container px-4">
+            <div className="text-center mb-4 reveal">
+              <h2 className="fw-bold text-white mb-3 section-title">Consola Interactiva DevOps</h2>
+              <p className="text-secondary mx-auto" style={{ maxWidth: '700px' }}>
+                Interactúa con mi clúster local a través de esta terminal simulada. Escribe comandos y presiona Enter.
+              </p>
+            </div>
+            <div className="row justify-content-center reveal">
+              <div className="col-lg-8">
+                <DevopsTerminal />
+              </div>
+            </div>
           </div>
         </section>
 
