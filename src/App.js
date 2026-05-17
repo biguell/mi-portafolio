@@ -109,7 +109,7 @@ function App() {
         },
         {
           title: 'Diseño & Impresión 3D',
-          description: 'Prototipado rápido y modelado avanzado en Tinkercad. Fabricación digital con Ender 3S1 Plus.',
+          description: 'Prototipado rápido y modelado avanzado en Tinkercad. Fabricación digital con Ender 3S1 Plus, Ender 3S1 PRO y Ender HI con CFS.',
           link: '#',
           image: tinkercadImg
         },
@@ -368,9 +368,6 @@ function App() {
                 <div className="d-flex flex-wrap gap-3 justify-content-center">
                   <a href="mailto:jluisie24@gmail.com" className="btn btn-primary btn-lg px-5 fw-bold shadow-neon contact-btn">
                     <i className="bi bi-rocket-takeoff me-2"></i>Contratar Servicios
-                  </a>
-                  <a href="#projects" className="btn btn-outline-light btn-lg px-4 fw-bold">
-                    Ver Portafolio
                   </a>
                 </div>
               </div>
