@@ -54,7 +54,7 @@ const DevopsTerminal = () => {
           { type: 'output', text: '      /     \\       -----------------' },
           { type: 'output', text: '      \\     /       OS: Biguell Hub OS v18.9.5' },
           { type: 'output', text: '       `---`        Kernel: Linux 6.1.0-rpi-devops' },
-          { type: 'output', text: '      /     \\       Uptime: 3 days, 22 hours, 39 mins' },
+          { type: 'output', text: '      /     \\       Uptime: 3 years, 4 months, 17 days, 8 hours' },
           { type: 'output', text: '     |  (_)  |      Packages: apt-listbugs needrestart debsums' },
           { type: 'output', text: '      \\     /       Shell: bash 5.2.15' },
           { type: 'output', text: '       `---`        CPU: Broadcom BCM2712 (quad-core)' },
