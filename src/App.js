@@ -58,6 +58,7 @@ function App() {
       projects: [
         {
           title: 'TurnoControlPro',
+          version: 'v6.5.41',
           description: 'Plataforma líder para la gestión operativa de conductores. Integra MySQL relacional, auditoría v5.0 y reportes avanzados.',
           link: 'https://www.turnocontrolpro.com',
           image: turnoControlImg
@@ -73,12 +74,6 @@ function App() {
           description: 'Asistente de gastos con Gemini. Lectura de tickets mediante OCR, clasificación dinámica y optimización de presupuestos.',
           link: '#',
           image: gastiumIaImg
-        },
-        {
-          title: 'Movimientos Drivers Comercial',
-          description: 'Plataforma especializada para la gestión comercial y logística de flotas de conductores. Integración con WhatsApp y reportes automáticos.',
-          link: '#',
-          image: turnoControlImg
         },
         {
           title: 'Escoba Drivers',
