@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.0fdeff8c.css",
-    "main.js": "./static/js/main.a46c43c2.js",
+    "main.css": "./static/css/main.7841af18.css",
+    "main.js": "./static/js/main.b5c79e1f.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
     "static/media/rambo_engine.png": "./static/media/rambo_engine.06008165d13c8e217d06.png",
     "static/media/tinkercad.png": "./static/media/tinkercad.85654c2f4ca8b730b92c.png",
@@ -18,12 +18,12 @@
     "static/media/home_assistant.svg": "./static/media/home_assistant.d8ec1a18807e54e9c74633cf3beedfc4.svg",
     "static/media/alexa.svg": "./static/media/alexa.e1cbbf0b451b648743627bd93c6160ae.svg",
     "static/media/plex.svg": "./static/media/plex.0603777cd9e30641a4d4b67c086446a2.svg",
-    "main.0fdeff8c.css.map": "./static/css/main.0fdeff8c.css.map",
-    "main.a46c43c2.js.map": "./static/js/main.a46c43c2.js.map",
+    "main.7841af18.css.map": "./static/css/main.7841af18.css.map",
+    "main.b5c79e1f.js.map": "./static/js/main.b5c79e1f.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fdeff8c.css",
-    "static/js/main.a46c43c2.js"
+    "static/css/main.7841af18.css",
+    "static/js/main.b5c79e1f.js"
   ]
 }
