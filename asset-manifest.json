@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.7841af18.css",
-    "main.js": "./static/js/main.86180570.js",
+    "main.js": "./static/js/main.69670e6c.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
     "static/media/rambo_engine.png": "./static/media/rambo_engine.06008165d13c8e217d06.png",
     "static/media/tinkercad.png": "./static/media/tinkercad.85654c2f4ca8b730b92c.png",
@@ -13,17 +13,17 @@
     "static/media/esp32.png": "./static/media/esp32.a416cf9acda7020bd717.png",
     "static/media/gastium_ia_v1250_mockup.png": "./static/media/gastium_ia_v1250_mockup.0eb8f396950a0f046c4b.png",
     "static/media/nextcloud_logo.png": "./static/media/nextcloud_logo.05a7808b9a6a427bbd79.png",
-    "static/media/openmediavault.svg": "./static/media/openmediavault.ef4312effcc7b748b89533f44aacb2d9.svg",
+    "static/media/certificate.svg": "./static/media/certificate.3f41f37d68dd3f8b95948e223d07c968.svg",
     "index.html": "./index.html",
-    "static/media/home_assistant.svg": "./static/media/home_assistant.d8ec1a18807e54e9c74633cf3beedfc4.svg",
-    "static/media/alexa.svg": "./static/media/alexa.e1cbbf0b451b648743627bd93c6160ae.svg",
-    "static/media/plex.svg": "./static/media/plex.0603777cd9e30641a4d4b67c086446a2.svg",
+    "static/media/home_assistant.svg": "./static/media/home_assistant.a11f1353538351b12f1a306f73753b47.svg",
+    "static/media/alexa.svg": "./static/media/alexa.d076929603547af7dbf7a191d41a5a3c.svg",
+    "static/media/plex.svg": "./static/media/plex.d2150b23f32c2aa5b64568c75e0f2e55.svg",
     "main.7841af18.css.map": "./static/css/main.7841af18.css.map",
-    "main.86180570.js.map": "./static/js/main.86180570.js.map",
+    "main.69670e6c.js.map": "./static/js/main.69670e6c.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7841af18.css",
-    "static/js/main.86180570.js"
+    "static/js/main.69670e6c.js"
   ]
 }
