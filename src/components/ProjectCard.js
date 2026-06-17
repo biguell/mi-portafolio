@@ -21,15 +21,32 @@ const ProjectCard = ({ title, version, description, link, image, overlayText, ob
         </div>
         <p className="card-text text-white-50 small mb-4" style={{ fontSize: '0.88rem', lineHeight: '1.6', flex: 1 }}>{description}</p>
         {link && link !== "#" && (
-          <a
-            href={link}
-            className="btn btn-outline-primary btn-sm w-100 mt-auto fw-bold"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ borderRadius: '8px', letterSpacing: '0.5px' }}
-          >
-            VER PROYECTO
-          </a>
+          Array.isArray(link) ? (
+            <div className="d-flex gap-2 w-100 mt-auto">
+              {link.map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.url}
+                  className="btn btn-outline-primary btn-sm flex-fill fw-bold text-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ borderRadius: '8px', letterSpacing: '0.5px', fontSize: '0.75rem', padding: '6px 4px' }}
+                >
+                  {item.text}
+                </a>
+              ))}
+            </div>
+          ) : (
+            <a
+              href={link}
+              className="btn btn-outline-primary btn-sm w-100 mt-auto fw-bold"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ borderRadius: '8px', letterSpacing: '0.5px' }}
+            >
+              VER PROYECTO
+            </a>
+          )
         )}
       </div>
     </div>
@@ -37,3 +54,4 @@ const ProjectCard = ({ title, version, description, link, image, overlayText, ob
 };
 
 export default ProjectCard;
+

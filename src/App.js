@@ -6,7 +6,6 @@ import './App.css';
 
 import homeAssistantImg from './assets/containers/home_assistant.svg';
 import plexImg from './assets/containers/plex.svg';
-import openmediavaultLogo from './assets/containers/openmediavault.svg';
 import raspiDashImg from './assets/containers/raspi_dashboard.png';
 import specraImg from './assets/containers/specra_trace.png';
 import esp32Img from './assets/containers/esp32.png';
@@ -19,6 +18,7 @@ import stariaImg from './assets/containers/staria_escoba_icon.png';
 import ramboDashImg from './assets/containers/rambo_dashboard.png';
 import ramboEngineImg from './assets/containers/rambo_engine.png';
 import DevopsTerminal from './components/DevopsTerminal';
+import certificateImg from './assets/containers/certificate.svg';
 
 function App() {
   const [telemetry, setTelemetry] = React.useState({
@@ -133,8 +133,11 @@ function App() {
         },
         {
           title: 'Diseño & Impresión 3D',
-          description: 'Prototipado rápido y modelado avanzado en Tinkercad. Fabricación digital con Ender 3S1 Plus, Ender 3S1 PRO y Ender HI con CFS.',
-          link: '#',
+          description: 'Modelado 3D de precisión enfocado en soluciones funcionales, piezas mecánicas y organizadores (p. ej. bandejas de residuos, soportes y cajas de herramientas). Perfiles activos en Printables y Creality Cloud con aportaciones de utilidad. Experto en laminado multi-color y calibración de impresoras Ender 3S1 Plus/Pro y Ender HI con CFS.',
+          link: [
+            { text: 'Printables (@yoeph)', url: 'https://www.printables.com/@yoeph_507556' },
+            { text: 'Creality Cloud', url: 'https://www.crealitycloud.com/es/user/2772190518' }
+          ],
           image: tinkercadImg
         },
         {
@@ -142,6 +145,72 @@ function App() {
           description: 'Servidor de medios optimizado con transcodificación 4K por hardware para reproducción fluida.',
           link: '#',
           image: plexImg
+        }
+      ]
+    },
+    {
+      name: 'Certificaciones & Formación',
+      icon: 'bi-award',
+      projects: [
+        {
+          title: 'Desarrollo Sostenible y Gestión Ambiental',
+          description: 'Certificación oficial SEAG16 sobre políticas de desarrollo sostenible, control del impacto ambiental y gestión de recursos.',
+          link: process.env.PUBLIC_URL + '/certificados/desarrollo_sostenible_gestion_ambiental.pdf',
+          image: certificateImg
+        },
+        {
+          title: 'Big Data & Business Intelligence',
+          description: 'Especialización IFCT128PO en análisis masivo de datos, privacidad, técnicas de machine learning y toma de decisiones empresariales basadas en datos.',
+          link: process.env.PUBLIC_URL + '/certificados/big_data.pdf',
+          image: certificateImg
+        },
+        {
+          title: 'Ciberseguridad para Usuarios',
+          description: 'Formación IFCT135PO en detección de amenazas, navegación segura, malware, phishing y protección básica de la identidad digital.',
+          link: process.env.PUBLIC_URL + '/certificados/ciberseguridad_usuarios.pdf',
+          image: certificateImg
+        },
+        {
+          title: 'Protección de Equipos en la Red',
+          description: 'Certificación IFCT106PO enfocada en la configuración de firewalls, antivirus, copias de seguridad, redes inalámbricas seguras y hardening del sistema.',
+          link: process.env.PUBLIC_URL + '/certificados/proteccion_equipos_red.pdf',
+          image: certificateImg
+        },
+        {
+          title: 'Reglamento Europeo de Protección de Datos (RGPD)',
+          description: 'Especialización FCOV011PO en cumplimiento del RGPD, derechos ARCO-POL, seguridad de la información y novedades en legislación de datos personales.',
+          link: process.env.PUBLIC_URL + '/certificados/reglamento_europeo_proteccion_datos.pdf',
+          image: certificateImg
+        },
+        {
+          title: 'Seguridad de los Datos Personales',
+          description: 'Certificación ADGD345PO sobre principios del tratamiento de datos, medidas técnicas de seguridad y gestión del riesgo en la manipulación de información privada.',
+          link: process.env.PUBLIC_URL + '/certificados/seguridad_datos_personales.pdf',
+          image: certificateImg
+        },
+        {
+          title: 'Inglés Profesional B1',
+          description: 'Acreditación de competencia comunicativa en inglés a nivel B1, capacitando para la redacción técnica y conversación profesional en entornos globales.',
+          link: process.env.PUBLIC_URL + '/certificados/ingles_b1.pdf',
+          image: certificateImg
+        },
+        {
+          title: 'Instalación y Configuración de Antenas',
+          description: 'Formación técnica especializada cubriendo el montaje, orientación y mantenimiento de sistemas de recepción de señales terrestres y satélite.',
+          link: [
+            { text: 'Diploma A', url: process.env.PUBLIC_URL + '/certificados/antenas_a.pdf' },
+            { text: 'Diploma B', url: process.env.PUBLIC_URL + '/certificados/antenas_b.pdf' }
+          ],
+          image: certificateImg
+        },
+        {
+          title: 'Automatización y Autómatas Programables',
+          description: 'Estudios de especialización en programación de autómatas industriales, robótica, esquemas eléctricos y control de procesos automatizados.',
+          link: [
+            { text: 'Diploma A', url: process.env.PUBLIC_URL + '/certificados/automatas_a.pdf' },
+            { text: 'Diploma B (Foto)', url: process.env.PUBLIC_URL + '/certificados/automatas_b.jpg' }
+          ],
+          image: certificateImg
         }
       ]
     }
