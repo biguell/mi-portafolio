@@ -136,7 +136,7 @@ function App() {
           description: 'Diseñador y creador de los perfiles YoephLabs. Modelado 3D de precisión enfocado en soluciones funcionales, piezas mecánicas y organizadores de utilidad. ¡Sígueme en mis perfiles de Printables y Creality Cloud para descargar mis últimos diseños y apoyar mi trabajo! Experto en laminado multi-color y calibración de impresoras Ender 3S1 Plus/Pro y Ender HI con CFS.',
           link: [
             { text: 'Printables (YoephLabs)', url: 'https://www.printables.com/@yoeph_507556' },
-            { text: 'Creality Cloud', url: 'https://www.crealitycloud.com/es/user/2772190518' }
+            { text: 'Creality Cloud', url: 'https://www.crealitycloud.com/user-profile/2772190518' }
           ],
           image: tinkercadImg
         },
@@ -261,8 +261,9 @@ function App() {
                 <h2 className="fw-bold mb-4 text-white section-title">Capacidades Técnicas</h2>
                 <p className="lead text-primary fw-semibold mb-3">José Luis Izquierdo Echuaca</p>
                 <p className="text-secondary mb-4" style={{ fontSize: '1rem' }}>
-                  Arquitecto de sistemas con enfoque en la convergencia entre <strong>IA, Seguridad y Hardware</strong>.
-                  Mi perfil combina la robustez de DevOps con la agilidad del desarrollo full-stack.
+                  Arquitecto de sistemas enfocado en la convergencia entre <strong>IA, Seguridad y Hardware</strong>, 
+                  así como <strong>creador de contenidos en 3D</strong> y <strong>creador de aplicaciones</strong>. 
+                  Mi perfil combina la robustez de DevOps con la agilidad del desarrollo de software y sistemas distribuidos.
                 </p>
                 <div className="d-flex flex-column gap-3 mt-4">
                   <div className="d-flex align-items-start gap-3 p-3 rounded-4" style={{ background: 'rgba(255, 255, 255, 0.015)', border: '1px solid rgba(255, 255, 255, 0.05)' }}>
