@@ -133,7 +133,7 @@ function App() {
         },
         {
           title: 'Diseño & Impresión 3D',
-          description: 'Desarrollador y creador de los perfiles YoephLabs. Modelado 3D de precisión enfocado en soluciones funcionales, piezas mecánicas y organizadores de utilidad. ¡Sígueme en mis perfiles de Printables y Creality Cloud para descargar mis últimos diseños y apoyar mi trabajo! Experto en laminado multi-color y calibración de impresoras Ender 3S1 Plus/Pro y Ender HI con CFS.',
+          description: 'Diseñador y creador de los perfiles YoephLabs. Modelado 3D de precisión enfocado en soluciones funcionales, piezas mecánicas y organizadores de utilidad. ¡Sígueme en mis perfiles de Printables y Creality Cloud para descargar mis últimos diseños y apoyar mi trabajo! Experto en laminado multi-color y calibración de impresoras Ender 3S1 Plus/Pro y Ender HI con CFS.',
           link: [
             { text: 'Printables (YoephLabs)', url: 'https://www.printables.com/@yoeph_507556' },
             { text: 'Creality Cloud', url: 'https://www.crealitycloud.com/es/user/2772190518' }
