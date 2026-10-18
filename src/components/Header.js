@@ -1,17 +1,42 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({ onNavigate }) => {
   return (
-    <header id="hero" className="hero-section bg-dark text-white text-center d-flex align-items-center" style={{ minHeight: '40vh', background: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80") center/cover no-repeat' }}>
-      <div className="container">
-        <h1 className="display-3 fw-bold mb-3 animate__animated animate__fadeInDown">Hola, soy José Luis</h1>
-        <p className="lead mb-4 animate__animated animate__fadeInUp">Técnico & Desarrollador | Ciberseguridad · IA · DevOps · IoT</p>
-        <div className="animate__animated animate__fadeInUp animate__delay-1s">
-          <a href="#projects" className="btn btn-primary btn-lg px-5 me-md-2 fw-bold shadow-sm">Ver Mis Proyectos</a>
-          <a href="#contact" className="btn btn-outline-light btn-lg px-5 fw-bold shadow-sm">Trabajemos Juntos</a>
-        </div>
+    <div className="text-center px-3 mb-3">
+      <div className="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-2 bg-primary bg-opacity-10 border border-primary border-opacity-25">
+        <span className="telemetry-dot"></span>
+        <span className="text-primary text-uppercase fw-bold" style={{ fontSize: '0.72rem', letterSpacing: '1px' }}>
+          Ingeniería de Sistemas · Domótica Autónoma · Soluciones SaaS & IA
+        </span>
       </div>
-    </header>
+
+      <h1 className="fw-bold mb-2 text-white hero-home-title" style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.6rem)', letterSpacing: '0.5px', lineHeight: '1.2' }}>
+        Arquitectura de Sistemas & Soluciones Tecnológicas
+      </h1>
+
+      <p className="text-white-50 mx-auto mb-3" style={{ maxWidth: '780px', fontSize: '0.95rem', lineHeight: '1.5' }}>
+        Infraestructuras Distribuidas de Alta Disponibilidad, Clústeres ARM64 de Misión Crítica, Visión Artificial Multimodal y Fabricación Digital 3D.
+      </p>
+
+      {/* Acciones directas para entrar a cada página */}
+      <div className="d-flex flex-wrap gap-2 justify-content-center">
+        <button onClick={() => onNavigate('software-ia')} className="btn btn-primary btn-sm px-3 fw-bold shadow-neon" style={{ borderRadius: '8px' }}>
+          <i className="bi bi-code-slash me-1"></i>Software & IA
+        </button>
+        <button onClick={() => onNavigate('domotica-iot')} className="btn btn-outline-info btn-sm px-3 fw-bold" style={{ borderRadius: '8px' }}>
+          <i className="bi bi-cpu-fill me-1"></i>Domótica & 3D Maker
+        </button>
+        <button onClick={() => onNavigate('infraestructura')} className="btn btn-outline-success btn-sm px-3 fw-bold" style={{ borderRadius: '8px' }}>
+          <i className="bi bi-shield-lock-fill me-1"></i>DevOps Clúster
+        </button>
+        <button onClick={() => onNavigate('certificaciones')} className="btn btn-outline-light btn-sm px-3 fw-bold" style={{ borderRadius: '8px' }}>
+          <i className="bi bi-award-fill text-warning me-1"></i>Certificados
+        </button>
+        <button onClick={() => onNavigate('contact')} className="btn btn-outline-warning btn-sm px-3 fw-bold" style={{ borderRadius: '8px' }}>
+          <i className="bi bi-person-badge me-1"></i>Perfil & Contacto
+        </button>
+      </div>
+    </div>
   );
 };
 
