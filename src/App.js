@@ -11,7 +11,7 @@ import raspiDashImg from './assets/containers/raspi_dashboard.png';
 import specraImg from './assets/containers/specra_trace.png';
 import esp32Img from './assets/containers/esp32.png';
 import gastiumIaImg from './assets/containers/gastium_ia_v1250_mockup.png';
-import tinkercadImg from './assets/containers/tinkercad.png';
+import solidcraftImg from './assets/containers/solidcraft.svg';
 import nextcloudLogo from './assets/containers/nextcloud_logo.png';
 import turnoControlImg from './assets/containers/turno_control_icon.png';
 import alexaImg from './assets/containers/alexa.svg';
@@ -184,12 +184,13 @@ function App() {
       title: 'Diseño & Fabricación Digital 3D (YoephLabs)',
       version: 'Hardware Lab & 3D Maker',
       statusBadge: 'Clúster 3D Operativo',
-      description: 'Prototipado rápido, diseño y modelado de ingeniería en Tinkercad. Fabricación aditiva con clúster de tres impresoras 3D de alta precisión: Creality Ender 3 S1 Plus, Ender 3 S1 Pro y Ender HI con sistema de filamento multicolor CFS. Catálogo de modelos 3D y piezas de libre descarga disponibles en Printables (perfil @yoeph) y Creality Cloud (YoephLabs): soportes para servidores NAS y Raspberry Pi, bebederos automáticos, organizadores de taller y adaptadores técnicos funcionales.',
-      link: 'https://www.printables.com/@yoeph/models',
+      description: 'Prototipado rápido, diseño y modelado de ingeniería en SolidCraft. Fabricación aditiva con clúster de cuatro impresoras 3D de alta precisión: Bambu Lab P2S con sistema multicolor AMS, Creality Ender 3 S1 Plus, Ender 3 S1 Pro y Ender HI con sistema de filamento multicolor CFS. Catálogo de modelos 3D y piezas de libre descarga disponibles en MakerWorld (@yoeplabs), Printables (@yoeph) y Creality Cloud (YoephLabs): soportes para servidores NAS y Raspberry Pi, bebederos automáticos, organizadores de taller y adaptadores técnicos funcionales.',
+      link: 'https://makerworld.com/es/@yoeplabs',
+      makerworldLink: 'https://makerworld.com/es/@yoeplabs',
       printablesLink: 'https://www.printables.com/@yoeph/models',
       crealityLink: 'https://www.crealitycloud.com/es/user/2772190518/profile',
-      badges: ['Printables Maker (@yoeph)', 'Creality Cloud (YoephLabs)', 'Ender 3S1 Pro/Plus', 'Ender HI CFS', 'Tinkercad'],
-      image: tinkercadImg
+      badges: ['MakerWorld (@yoeplabs)', 'Printables Maker (@yoeph)', 'Creality Cloud (YoephLabs)', 'Bambu Lab P2S (AMS)', 'Ender 3S1 Pro/Plus', 'Ender HI CFS', 'SolidCraft'],
+      image: solidcraftImg
     },
     {
       title: 'K2-RFID IoT System',
@@ -477,6 +478,7 @@ function App() {
                       version={project.version}
                       description={project.description}
                       link={project.link}
+                      makerworldLink={project.makerworldLink}
                       printablesLink={project.printablesLink}
                       crealityLink={project.crealityLink}
                       badges={project.badges}
@@ -811,7 +813,7 @@ function App() {
 
                         <div className="skill-item-inner">
                           <div className="d-flex justify-content-between small mb-1">
-                            <span>Fabricación 3D (Ender CFS / CAD)</span>
+                            <span>Fabricación 3D (Bambu Lab AMS / Ender CFS / CAD)</span>
                             <span className="fw-bold" style={{ color: '#ffd700', textShadow: '0 0 10px rgba(255, 215, 0, 0.4)' }}>Experto (92%)</span>
                           </div>
                           <div className="skill-bar-container">
@@ -857,7 +859,7 @@ function App() {
                     </div>
                     <h5 className="text-white fw-bold mb-2">IoT & Fabricación 3D</h5>
                     <p className="text-secondary small mb-0" style={{ lineHeight: '1.6', fontSize: '0.85rem' }}>
-                      Prototipado inteligente con microcontroladores (ESP32), integración domótica profesional (Home Assistant) y modelado/impresión 3D de piezas físicas personalizadas (catálogo público en Printables y Creality Cloud).
+                      Prototipado inteligente con microcontroladores (ESP32), integración domótica profesional (Home Assistant) y modelado/impresión 3D de piezas físicas personalizadas (catálogo público en MakerWorld, Printables y Creality Cloud).
                     </p>
                   </div>
                 </div>
@@ -998,9 +1000,9 @@ function App() {
                           </span>
                         </div>
                         <h6 className="fw-bold text-white mb-1">Diseño CAD & Fabricación Aditiva FDM</h6>
-                        <span className="small fw-semibold d-block mb-2" style={{ color: '#ffca28' }}>Creality Ender S1/HI · Tinkercad · CFS</span>
+                        <span className="small fw-semibold d-block mb-2" style={{ color: '#ffca28' }}>Bambu Lab P2S AMS · Creality Ender S1/HI CFS · SolidCraft</span>
                         <p className="text-secondary small mb-0" style={{ fontSize: '0.82rem', lineHeight: '1.6' }}>
-                          Ingeniería inversa, modelado CAD para componentes de tolerancia estricta, extrusión técnica multi-filamento y catálogo público de modelos en Printables y Creality Cloud.
+                          Ingeniería inversa, modelado CAD para componentes de tolerancia estricta, extrusión técnica multi-filamento y catálogo público de modelos en MakerWorld, Printables y Creality Cloud.
                         </p>
                       </div>
                       <div className="pt-3 mt-3 border-top border-secondary border-opacity-15 d-flex justify-content-between align-items-center">

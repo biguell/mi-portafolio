@@ -9,6 +9,7 @@ const ProjectCard = ({
   playStoreLink,
   webLink,
   pwaGuide,
+  makerworldLink,
   printablesLink,
   crealityLink,
   badges = [],
@@ -203,6 +204,18 @@ const ProjectCard = ({
               </div>
             )}
           </div>
+        )}
+
+        {makerworldLink && (
+          <a
+            href={makerworldLink}
+            className="btn btn-sm w-100 fw-bold d-flex align-items-center justify-content-center gap-2 shadow-sm text-white"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ borderRadius: '8px', background: 'linear-gradient(135deg, #00ae42 0%, #008f37 100%)', border: 'none', fontSize: '0.82rem' }}
+          >
+            <i className="bi bi-printer-fill"></i> Modelos 3D en MakerWorld (@yoeplabs)
+          </a>
         )}
 
         {printablesLink && (

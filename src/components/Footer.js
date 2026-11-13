@@ -119,7 +119,7 @@ const Footer = ({ showCinematicName = false, onNavigate }) => {
                   LABORATORIO & FABRICACIÓN 3D
                 </span>
                 <span className="text-success fw-bold d-block" style={{ fontSize: '0.92rem' }}>
-                  YOEPHLABS (PRINTABLES & CREALITY)
+                  YOEPHLABS (MAKERWORLD, PRINTABLES & CREALITY)
                 </span>
               </div>
             </div>
