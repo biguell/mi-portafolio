@@ -69,6 +69,11 @@ function App() {
   // Expediente de Certificaciones Oficiales & Formación
   const certificacionesList = [
     {
+      title: "Master Executive: Full-Stack Engineer, Cloud/DevOps, IA & Fabricación 3D",
+      description: "Acreditación profesional integral y diploma de maestría técnica que certifica el expediente global: arquitecturas distribuidas ARM64, microservicios Docker, visión artificial multimodal con Gemini, domótica de misión crítica y diseño CAD paramétrico.",
+      link: "./certificados/diploma_maestria_fullstack_devops_ia_3d.pdf"
+    },
+    {
       title: "Desarrollo Sostenible y Gestión Ambiental",
       description: "Certificación oficial SEAG16 sobre políticas de desarrollo sostenible, control del impacto ambiental y gestión de recursos.",
       link: "./certificados/desarrollo_sostenible_gestion_ambiental.pdf"
@@ -556,7 +561,7 @@ function App() {
                 </div>
                 <div className="mt-3 mt-md-0">
                   <span className="badge badge-soft-success px-3 py-2 rounded-pill small">
-                    <i className="bi bi-shield-check me-1"></i> 9 Certificaciones Verificadas
+                    <i className="bi bi-shield-check me-1"></i> 10 Certificaciones Verificadas
                   </span>
                 </div>
               </div>
@@ -881,7 +886,7 @@ function App() {
                       className="btn btn-outline-warning btn-sm px-3 fw-bold shadow-sm"
                       style={{ borderRadius: '8px' }}
                     >
-                      <i className="bi bi-award-fill me-1"></i> Ver los 9 Diplomas Oficiales Verificados (PDF) <i className="bi bi-arrow-right ms-1"></i>
+                      <i className="bi bi-award-fill me-1"></i> Ver los 10 Diplomas Oficiales Verificados (PDF) <i className="bi bi-arrow-right ms-1"></i>
                     </button>
                   </div>
                 </div>
