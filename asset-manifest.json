@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.2a5b23e2.css",
-    "main.js": "./static/js/main.03bb65a6.js",
+    "main.js": "./static/js/main.ecffb796.js",
     "static/js/453.c173b4f9.chunk.js": "./static/js/453.c173b4f9.chunk.js",
     "static/media/rambo_engine.png": "./static/media/rambo_engine.06008165d13c8e217d06.png",
-    "static/media/tinkercad.png": "./static/media/tinkercad.85654c2f4ca8b730b92c.png",
     "static/media/rambo_dashboard.png": "./static/media/rambo_dashboard.aa0c25863f98d0186238.png",
     "static/media/staria_escoba_icon.png": "./static/media/staria_escoba_icon.c25badd0433b751b6aac.png",
     "static/media/turno_control_icon.png": "./static/media/turno_control_icon.7c374ee1b49e8914d1db.png",
@@ -13,17 +12,18 @@
     "static/media/esp32.png": "./static/media/esp32.a416cf9acda7020bd717.png",
     "static/media/gastium_ia_v1250_mockup.png": "./static/media/gastium_ia_v1250_mockup.0eb8f396950a0f046c4b.png",
     "static/media/nextcloud_logo.png": "./static/media/nextcloud_logo.05a7808b9a6a427bbd79.png",
+    "static/media/solidcraft.svg": "./static/media/solidcraft.8c7b4d92a36b39100f1f3011be0e3818.svg",
     "static/media/certificate.svg": "./static/media/certificate.3f41f37d68dd3f8b95948e223d07c968.svg",
     "index.html": "./index.html",
     "static/media/home_assistant.svg": "./static/media/home_assistant.d8ec1a18807e54e9c74633cf3beedfc4.svg",
     "static/media/alexa.svg": "./static/media/alexa.e1cbbf0b451b648743627bd93c6160ae.svg",
     "static/media/plex.svg": "./static/media/plex.0603777cd9e30641a4d4b67c086446a2.svg",
     "main.2a5b23e2.css.map": "./static/css/main.2a5b23e2.css.map",
-    "main.03bb65a6.js.map": "./static/js/main.03bb65a6.js.map",
+    "main.ecffb796.js.map": "./static/js/main.ecffb796.js.map",
     "453.c173b4f9.chunk.js.map": "./static/js/453.c173b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a5b23e2.css",
-    "static/js/main.03bb65a6.js"
+    "static/js/main.ecffb796.js"
   ]
 }

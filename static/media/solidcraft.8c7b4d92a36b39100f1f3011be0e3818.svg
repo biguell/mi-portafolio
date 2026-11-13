@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="scBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="scTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="scLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="scRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#075985"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+    <linearGradient id="scGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect width="256" height="256" rx="44" fill="url(#scBg)"/>
+  <rect x="2" y="2" width="252" height="252" rx="42" fill="none" stroke="#38bdf8" stroke-opacity="0.25" stroke-width="2"/>
+  
+  <!-- Isometric 3D SolidCraft Cube & Precision CAD Wireframe -->
+  <g transform="translate(128, 114)">
+    <!-- Top Face -->
+    <polygon points="0,-60 56,-28 0,4 -56,-28" fill="url(#scTop)"/>
+    <!-- Top CAD Grid -->
+    <line x1="-28" y1="-44" x2="28" y2="-12" stroke="#e0f2fe" stroke-width="1.5" stroke-opacity="0.7"/>
+    <line x1="-14" y1="-52" x2="42" y2="-20" stroke="#e0f2fe" stroke-width="1.2" stroke-opacity="0.4"/>
+    <line x1="-42" y1="-36" x2="14" y2="-4" stroke="#e0f2fe" stroke-width="1.2" stroke-opacity="0.4"/>
+
+    <!-- Left Face -->
+    <polygon points="-56,-28 0,4 0,68 -56,36" fill="url(#scLeft)"/>
+    <line x1="-56" y1="4" x2="0" y2="36" stroke="#bae6fd" stroke-width="1.2" stroke-opacity="0.3"/>
+    <line x1="-28" y1="20" x2="-28" y2="-12" stroke="#bae6fd" stroke-width="1.2" stroke-opacity="0.3"/>
+
+    <!-- Right Face -->
+    <polygon points="0,4 56,-28 56,36 0,68" fill="url(#scRight)"/>
+    <line x1="0" y1="36" x2="56" y2="4" stroke="#7dd3fc" stroke-width="1.2" stroke-opacity="0.25"/>
+    <line x1="28" y1="20" x2="28" y2="-12" stroke="#7dd3fc" stroke-width="1.2" stroke-opacity="0.25"/>
+
+    <!-- Core Parametric Extrusion (Gold CAD Cutout) -->
+    <polygon points="0,-14 24,0 0,14 -24,0" fill="url(#scGold)"/>
+    <polygon points="-24,0 0,14 0,36 -24,22" fill="#b45309"/>
+    <polygon points="0,14 24,0 24,22 0,36" fill="#78350f"/>
+
+    <!-- Dimension Coordinate Axes -->
+    <!-- Z axis (Cyan) -->
+    <line x1="0" y1="-60" x2="0" y2="-78" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="-78" r="3" fill="#38bdf8"/>
+    <!-- X axis (Amber) -->
+    <line x1="56" y1="36" x2="72" y2="45" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="72" cy="45" r="3" fill="#fbbf24"/>
+    <!-- Y axis (Emerald) -->
+    <line x1="-56" y1="36" x2="-72" y2="45" stroke="#34d399" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-72" cy="45" r="3" fill="#34d399"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="128" y="218" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="900" fill="#f8fafc" text-anchor="middle" letter-spacing="3">SOLIDCRAFT</text>
+  <text x="128" y="235" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="2">3D CAD PARAMÉTRICO</text>
+</svg>
