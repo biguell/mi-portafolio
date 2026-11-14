@@ -69,8 +69,8 @@ function App() {
   // Expediente de Certificaciones Oficiales & Formación
   const certificacionesList = [
     {
-      title: "Master Executive: Full-Stack Engineer, Cloud/DevOps, IA & Fabricación 3D",
-      description: "Acreditación profesional integral y diploma de maestría técnica que certifica el expediente global: arquitecturas distribuidas ARM64, microservicios Docker, visión artificial multimodal con Gemini, domótica de misión crítica y diseño CAD paramétrico.",
+      title: "Master Executive: Full-Stack Engineer, Cloud/DevOps, IA & Fabricación 3D (2008 - 2021)",
+      description: "Acreditación profesional integral y diploma de maestría técnica que certifica el expediente y bagaje profesional (2008-2021): arquitecturas de servidores bare-metal Linux, microservicios Docker, visión por computador, domótica de misión crítica y modelado CAD 3D.",
       link: "./certificados/diploma_maestria_fullstack_devops_ia_3d.pdf"
     },
     {
