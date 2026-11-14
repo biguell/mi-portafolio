@@ -228,7 +228,7 @@ const Footer = ({ showCinematicName = false, onNavigate }) => {
           </a>
           <span className="credits-separator opacity-25 d-none d-md-inline">·</span>
           <a
-            href="https://play.google.com/store/apps/details?id=com.bigcomsat.turnocontrolpro"
+            href="https://play.google.com/store/apps/details?id=com.turnocontrolpro.app"
             target="_blank"
             rel="noopener noreferrer"
             className="credits-link d-flex align-items-center gap-2"

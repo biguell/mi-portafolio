@@ -134,7 +134,7 @@ function App() {
       statusBadge: 'Multi-Sector Prod',
       description: 'Plataforma integral multi-sector para gestión operativa y control de flotas en movilidad: VTC, Taxis, Reparto de Última Milla, Transfers de Pasajeros, Campas de Vehículos, Alquiler (Rent a Car) y Talleres. Incorpora lectura de matrículas por visión artificial (Computer Vision), relevo con firma en pantalla y GPS, checklist de daños con fotografías en tiempo real, soporte multi-energía y Asistente IA 24/7.',
       link: 'https://www.turnocontrolpro.com',
-      playStoreLink: 'https://play.google.com/store/apps/details?id=com.bigcomsat.turnocontrolpro',
+      playStoreLink: 'https://play.google.com/store/apps/details?id=com.turnocontrolpro.app',
       webLink: 'https://www.turnocontrolpro.com',
       pwaGuide: true,
       badges: ['Google Play Store', 'PWA (iPhone/Mac/PC)', 'VTC · Taxi · Reparto · Campas · Rent', 'IA Gemini Vision', 'Firma GPS', 'Multi-Energía'],
